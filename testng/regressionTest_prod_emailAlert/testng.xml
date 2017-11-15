@@ -1,0 +1,3419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite_Zhihuiya_EmailAlert_Test" parallel="false">
+	<!-- basic -->
+	<parameter name="browserType" value="ff" />
+	<parameter name="chromeDriverPath" value="E:\\autotest\\drivers\\chromedriver.exe" />
+	<parameter name="ieDriverPath" value="E:\\autotest\\drivers\\IEDriverServer.exe" />
+	<parameter name="timeout_ImplicitlyWait" value="5" />
+	<parameter name="timeout_PageLoadTimeout" value="60" />
+	<parameter name="timeout_ScriptLoadTimeout" value="30" />
+	<parameter name="firefoxProfile" value="0" />
+	<parameter name="language" value="2" />
+	<!-- account -->
+	<parameter name="loginPage_url" value="http://analytics.patsnap.com/" />
+	<parameter name="loginPage_uid" value="hanqing@zhihuiya.com" />
+	<parameter name="loginPage_pwd" value="123456" />
+	
+	<!--======================================== Create Email Alert  ========================================-->
+	
+	<test name="Pat-3540:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3553:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3555:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3556:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3576:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3577:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3578:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3579:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3581:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3582:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3583:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3584:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3585:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3586:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3587:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3588:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Pat-3591:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3592:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3593:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3594:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3595:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3596:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3597:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3598:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3599:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3600:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3601:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3602:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3603:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3604:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3605:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3606:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Pat-3608:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3609:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3610:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3611:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3612:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3613:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3614:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3615:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3616:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3617:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3618:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3619:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3620:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3621:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3622:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3623:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Pat-3627:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3628:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3629:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3630:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3631:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3632:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3633:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3634:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3635:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3636:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3637:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3638:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3639:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3640:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3641:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3642:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Pat-3643:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3644:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3645:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3646:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3647:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3648:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3649:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3650:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3651:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3652:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3653:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3654:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3655:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3656:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3657:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3658:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Pat-3659:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3660:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3661:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3662:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3663:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3664:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3665:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3666:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="-1" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3667:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3668:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3669:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3670:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3671:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3672:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3673:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="stemming" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3674:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="1" />
+		<parameter name="stemming" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_searchResultPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	Legal Status Alert
+
+	<test name="Pat-3681:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="-1" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3683:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="-1" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3685:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="-1" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3687:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="-1" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3689:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="-1" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3691:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="-1" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3693:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="-1" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3695:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="-1" />
+		<parameter name="stemming" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Pat-3697:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="-1" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3699:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="-1" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3701:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="-1" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3703:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="-1" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3705:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="-1" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3707:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="-1" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3709:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="-1" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3711:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="-1" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Pat-3713:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="-1" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3715:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="-1" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3717:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="-1" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3719:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="-1" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3721:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="-1" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3723:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="-1" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3725:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="-1" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3727:EA - Email Alert can be created correctly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="-1" />
+		<parameter name="stemming" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_createEmailAlert_emailAlertPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	======================================== Update Email Alert  ========================================
+
+	<test name="Pat-3793:EA - Update name" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="emailAlertName_2" value="testAlertUpdated" />
+		<parameter name="minObjType_2" value="1" />
+		<parameter name="query_2" value="car1" />
+		<parameter name="listIndex_2" value="1" />
+		<parameter name="isOtherEmail_2" value="1" />
+		<parameter name="otherEmail_2" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency_2" value="1" />
+		<parameter name="frequencyIndex_2" value="0" />
+		<parameter name="duration_2" value="2" />
+		<parameter name="content_2" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_updateEmailAlert" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3796:EA - Update Monitor Objects type to Lists" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="emailAlertName_2" value="testAlert" />
+		<parameter name="minObjType_2" value="1" />
+		<parameter name="query_2" value="car1" />
+		<parameter name="listIndex_2" value="1" />
+		<parameter name="isOtherEmail_2" value="1" />
+		<parameter name="otherEmail_2" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency_2" value="1" />
+		<parameter name="frequencyIndex_2" value="0" />
+		<parameter name="duration_2" value="2" />
+		<parameter name="content_2" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_updateEmailAlert" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3800:EA - Update Monitor Objects type to Search Query" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="emailAlertName_2" value="testAlert" />
+		<parameter name="minObjType_2" value="0" />
+		<parameter name="query_2" value="car1" />
+		<parameter name="listIndex_2" value="1" />
+		<parameter name="isOtherEmail_2" value="1" />
+		<parameter name="otherEmail_2" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency_2" value="1" />
+		<parameter name="frequencyIndex_2" value="0" />
+		<parameter name="duration_2" value="2" />
+		<parameter name="content_2" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_updateEmailAlert" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3805:EA - Update Search Query" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="emailAlertName_2" value="testAlert" />
+		<parameter name="minObjType_2" value="0" />
+		<parameter name="query_2" value="car2" />
+		<parameter name="listIndex_2" value="1" />
+		<parameter name="isOtherEmail_2" value="1" />
+		<parameter name="otherEmail_2" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency_2" value="1" />
+		<parameter name="frequencyIndex_2" value="0" />
+		<parameter name="duration_2" value="2" />
+		<parameter name="content_2" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_updateEmailAlert" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3811:EA - Update Lists" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="emailAlertName_2" value="testAlert" />
+		<parameter name="minObjType_2" value="1" />
+		<parameter name="query_2" value="car1" />
+		<parameter name="listIndex_2" value="2" />
+		<parameter name="isOtherEmail_2" value="1" />
+		<parameter name="otherEmail_2" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency_2" value="1" />
+		<parameter name="frequencyIndex_2" value="0" />
+		<parameter name="duration_2" value="2" />
+		<parameter name="content_2" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_updateEmailAlert" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3812:EA - Update send to (add other email)" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="emailAlertName_2" value="testAlert" />
+		<parameter name="minObjType_2" value="0" />
+		<parameter name="query_2" value="car1" />
+		<parameter name="listIndex_2" value="1" />
+		<parameter name="isOtherEmail_2" value="1" />
+		<parameter name="otherEmail_2" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency_2" value="1" />
+		<parameter name="frequencyIndex_2" value="0" />
+		<parameter name="duration_2" value="2" />
+		<parameter name="content_2" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_updateEmailAlert" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3813:EA - Update send to (remove other email)" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="emailAlertName_2" value="testAlert" />
+		<parameter name="minObjType_2" value="0" />
+		<parameter name="query_2" value="car1" />
+		<parameter name="listIndex_2" value="1" />
+		<parameter name="isOtherEmail_2" value="0" />
+		<parameter name="otherEmail_2" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency_2" value="1" />
+		<parameter name="frequencyIndex_2" value="0" />
+		<parameter name="duration_2" value="2" />
+		<parameter name="content_2" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_updateEmailAlert" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3814:EA - Update Frequency to monthly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="emailAlertName_2" value="testAlert" />
+		<parameter name="minObjType_2" value="0" />
+		<parameter name="query_2" value="car1" />
+		<parameter name="listIndex_2" value="1" />
+		<parameter name="isOtherEmail_2" value="0" />
+		<parameter name="otherEmail_2" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency_2" value="1" />
+		<parameter name="frequencyIndex_2" value="31" />
+		<parameter name="duration_2" value="2" />
+		<parameter name="content_2" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_updateEmailAlert" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3815:EA - Update Frequency to weekly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="1" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="emailAlertName_2" value="testAlert" />
+		<parameter name="minObjType_2" value="0" />
+		<parameter name="query_2" value="car1" />
+		<parameter name="listIndex_2" value="1" />
+		<parameter name="isOtherEmail_2" value="0" />
+		<parameter name="otherEmail_2" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency_2" value="0" />
+		<parameter name="frequencyIndex_2" value="1" />
+		<parameter name="duration_2" value="2" />
+		<parameter name="content_2" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_updateEmailAlert" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3816:EA - Update Duration to never expire" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="0" />
+		<parameter name="emailAlertName_2" value="testAlert" />
+		<parameter name="minObjType_2" value="0" />
+		<parameter name="query_2" value="car1" />
+		<parameter name="listIndex_2" value="1" />
+		<parameter name="isOtherEmail_2" value="0" />
+		<parameter name="otherEmail_2" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency_2" value="0" />
+		<parameter name="frequencyIndex_2" value="0" />
+		<parameter name="duration_2" value="2" />
+		<parameter name="content_2" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_updateEmailAlert" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3817:EA - Update Duration to will expire" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="emailAlertName_2" value="testAlert" />
+		<parameter name="minObjType_2" value="0" />
+		<parameter name="query_2" value="car1" />
+		<parameter name="listIndex_2" value="1" />
+		<parameter name="isOtherEmail_2" value="0" />
+		<parameter name="otherEmail_2" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency_2" value="0" />
+		<parameter name="frequencyIndex_2" value="0" />
+		<parameter name="duration_2" value="0" />
+		<parameter name="content_2" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_updateEmailAlert" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3818:EA - Update Email Content to 'All the results'" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="1" />
+		<parameter name="emailAlertName_2" value="testAlert" />
+		<parameter name="minObjType_2" value="0" />
+		<parameter name="query_2" value="car1" />
+		<parameter name="listIndex_2" value="1" />
+		<parameter name="isOtherEmail_2" value="0" />
+		<parameter name="otherEmail_2" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency_2" value="0" />
+		<parameter name="frequencyIndex_2" value="0" />
+		<parameter name="duration_2" value="2" />
+		<parameter name="content_2" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_updateEmailAlert" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3821:EA - Update Email Content to 'The latest updates'" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="emailAlertName_2" value="testAlert" />
+		<parameter name="minObjType_2" value="0" />
+		<parameter name="query_2" value="car1" />
+		<parameter name="listIndex_2" value="1" />
+		<parameter name="isOtherEmail_2" value="0" />
+		<parameter name="otherEmail_2" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency_2" value="0" />
+		<parameter name="frequencyIndex_2" value="0" />
+		<parameter name="duration_2" value="2" />
+		<parameter name="content_2" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_updateEmailAlert" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Pat-3823:EA - Update status to 'Inactive'" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="status" value="0" />
+		<parameter name="status_2" value="1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_updateEmailAlertStatus" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3824:EA - Update status to 'Active'" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="status" value="1" />
+		<parameter name="status_2" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_updateEmailAlertStatus" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3825:EA - Update patents number" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="0" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_updateEmailAlertByChangingStemming" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3827:EA - Update name" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="-1" />
+		<parameter name="emailAlertName_2" value="testAlertUpdated" />
+		<parameter name="minObjType_2" value="1" />
+		<parameter name="query_2" value="car1" />
+		<parameter name="listIndex_2" value="1" />
+		<parameter name="isOtherEmail_2" value="1" />
+		<parameter name="otherEmail_2" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency_2" value="1" />
+		<parameter name="frequencyIndex_2" value="0" />
+		<parameter name="duration_2" value="2" />
+		<parameter name="content_2" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_updateEmailAlert" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3828:EA - Update Monitor Objects type to Lists" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="-1" />
+		<parameter name="emailAlertName_2" value="testAlert" />
+		<parameter name="minObjType_2" value="1" />
+		<parameter name="query_2" value="car1" />
+		<parameter name="listIndex_2" value="1" />
+		<parameter name="isOtherEmail_2" value="1" />
+		<parameter name="otherEmail_2" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency_2" value="1" />
+		<parameter name="frequencyIndex_2" value="0" />
+		<parameter name="duration_2" value="2" />
+		<parameter name="content_2" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_updateEmailAlert" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3829:EA - Update Monitor Objects type to Search Query" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="-1" />
+		<parameter name="emailAlertName_2" value="testAlert" />
+		<parameter name="minObjType_2" value="0" />
+		<parameter name="query_2" value="car1" />
+		<parameter name="listIndex_2" value="1" />
+		<parameter name="isOtherEmail_2" value="1" />
+		<parameter name="otherEmail_2" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency_2" value="1" />
+		<parameter name="frequencyIndex_2" value="0" />
+		<parameter name="duration_2" value="2" />
+		<parameter name="content_2" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_updateEmailAlert" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3830:EA - Update Search Query" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="-1" />
+		<parameter name="emailAlertName_2" value="testAlert" />
+		<parameter name="minObjType_2" value="0" />
+		<parameter name="query_2" value="car2" />
+		<parameter name="listIndex_2" value="1" />
+		<parameter name="isOtherEmail_2" value="1" />
+		<parameter name="otherEmail_2" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency_2" value="1" />
+		<parameter name="frequencyIndex_2" value="0" />
+		<parameter name="duration_2" value="2" />
+		<parameter name="content_2" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_updateEmailAlert" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3831:EA - Update Lists" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="1" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="-1" />
+		<parameter name="emailAlertName_2" value="testAlert" />
+		<parameter name="minObjType_2" value="1" />
+		<parameter name="query_2" value="car1" />
+		<parameter name="listIndex_2" value="2" />
+		<parameter name="isOtherEmail_2" value="1" />
+		<parameter name="otherEmail_2" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency_2" value="1" />
+		<parameter name="frequencyIndex_2" value="0" />
+		<parameter name="duration_2" value="2" />
+		<parameter name="content_2" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_updateEmailAlert" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3832:EA - Update send to (add other email)" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="-1" />
+		<parameter name="emailAlertName_2" value="testAlert" />
+		<parameter name="minObjType_2" value="0" />
+		<parameter name="query_2" value="car1" />
+		<parameter name="listIndex_2" value="1" />
+		<parameter name="isOtherEmail_2" value="1" />
+		<parameter name="otherEmail_2" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency_2" value="1" />
+		<parameter name="frequencyIndex_2" value="0" />
+		<parameter name="duration_2" value="2" />
+		<parameter name="content_2" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_updateEmailAlert" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3833:EA - Update send to (remove other email)" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="1" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="-1" />
+		<parameter name="emailAlertName_2" value="testAlert" />
+		<parameter name="minObjType_2" value="0" />
+		<parameter name="query_2" value="car1" />
+		<parameter name="listIndex_2" value="1" />
+		<parameter name="isOtherEmail_2" value="0" />
+		<parameter name="otherEmail_2" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency_2" value="1" />
+		<parameter name="frequencyIndex_2" value="0" />
+		<parameter name="duration_2" value="2" />
+		<parameter name="content_2" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_updateEmailAlert" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3834:EA - Update Frequency to monthly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="-1" />
+		<parameter name="emailAlertName_2" value="testAlert" />
+		<parameter name="minObjType_2" value="0" />
+		<parameter name="query_2" value="car1" />
+		<parameter name="listIndex_2" value="1" />
+		<parameter name="isOtherEmail_2" value="0" />
+		<parameter name="otherEmail_2" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency_2" value="1" />
+		<parameter name="frequencyIndex_2" value="31" />
+		<parameter name="duration_2" value="2" />
+		<parameter name="content_2" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_updateEmailAlert" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3835:EA - Update Frequency to weekly" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="1" />
+		<parameter name="frequencyIndex" value="1" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="-1" />
+		<parameter name="emailAlertName_2" value="testAlert" />
+		<parameter name="minObjType_2" value="0" />
+		<parameter name="query_2" value="car1" />
+		<parameter name="listIndex_2" value="1" />
+		<parameter name="isOtherEmail_2" value="0" />
+		<parameter name="otherEmail_2" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency_2" value="0" />
+		<parameter name="frequencyIndex_2" value="1" />
+		<parameter name="duration_2" value="2" />
+		<parameter name="content_2" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_updateEmailAlert" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3836:EA - Update Duration to never expire" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="-1" />
+		<parameter name="emailAlertName_2" value="testAlert" />
+		<parameter name="minObjType_2" value="0" />
+		<parameter name="query_2" value="car1" />
+		<parameter name="listIndex_2" value="1" />
+		<parameter name="isOtherEmail_2" value="0" />
+		<parameter name="otherEmail_2" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency_2" value="0" />
+		<parameter name="frequencyIndex_2" value="0" />
+		<parameter name="duration_2" value="2" />
+		<parameter name="content_2" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_updateEmailAlert" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3837:EA - Update Duration to will expire" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="-1" />
+		<parameter name="emailAlertName_2" value="testAlert" />
+		<parameter name="minObjType_2" value="0" />
+		<parameter name="query_2" value="car1" />
+		<parameter name="listIndex_2" value="1" />
+		<parameter name="isOtherEmail_2" value="0" />
+		<parameter name="otherEmail_2" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency_2" value="0" />
+		<parameter name="frequencyIndex_2" value="0" />
+		<parameter name="duration_2" value="0" />
+		<parameter name="content_2" value="-1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_updateEmailAlert" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3840:EA - Update status to 'Inactive'" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="status" value="1" />
+		<parameter name="status_2" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_updateEmailAlertStatus" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3841:EA - Update status to 'Active'" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="2" />
+		<parameter name="content" value="0" />
+		<parameter name="status" value="1" />
+		<parameter name="status_2" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_updateEmailAlertStatus" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-3842:EA - Update patents number" preserve-order="true">
+		<parameter name="emailAlertName" value="testAlert" />
+		<parameter name="emailAlertType" value="1" />
+		<parameter name="minObjType" value="0" />
+		<parameter name="query" value="car1" />
+		<parameter name="listIndex" value="-1" />
+		<parameter name="isOtherEmail" value="0" />
+		<parameter name="otherEmail" value="patsnapautotest_ea@patsnap.com" />
+		<parameter name="frequency" value="0" />
+		<parameter name="frequencyIndex" value="0" />
+		<parameter name="duration" value="0" />
+		<parameter name="content" value="0" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_emailAlert">
+				<methods>
+					<include name="emailAlert_updateEmailAlertByChangingStemming" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	
+</suite>

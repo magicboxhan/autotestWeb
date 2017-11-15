@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite_Zhihuiya" parallel="false">
+	<!-- basic -->
+	<parameter name="browserType" value="ff" />
+	<parameter name="chromeDriverPath" value="E:\\autotest\\drivers\\chromedriver.exe" />
+	<parameter name="ieDriverPath" value="E:\\autotest\\drivers\\IEDriverServer.exe" />
+	<parameter name="timeout_ImplicitlyWait" value="5" />
+	<parameter name="timeout_PageLoadTimeout" value="600" />
+	<parameter name="timeout_ScriptLoadTimeout" value="300" />
+	<parameter name="firefoxProfile" value="1" />
+	<!-- account -->
+	<parameter name="loginPage_url" value="http://www.patsnap.com/" />
+	<parameter name="loginPage_uid" value="hanqing@zhihuiya.com" />
+	<parameter name="loginPage_pwd" value="123456" />
+	<test name="zhihuiya_landscape" preserve-order="true">
+		<parameter name="timeout_ImplicitlyWait" value="1" />
+		<parameter name="timeout_PageLoadTimeout" value="600" />
+		<parameter name="timeout_ScriptLoadTimeout" value="300" />
+		<parameter name="searchPage_database" value="ALL_DB" />
+		<parameter name="searchPage_field" value="TTL" />
+		<parameter name="searchPage_keyword" value="trip" />
+		<parameter name="landscapePage_sampingValue" value="500,10000" />
+		<parameter name="landscapePage_sampingTimeout" value="300" />
+		<parameter name="landscapePage_retryTimes" value="1" />
+		<parameter name="landscapePage_loopTimes" value="1" />
+		<parameter name="monitorThread_interval" value="900" />
+		<classes>
+			<class name="Zhihuiya_smokeTest">
+				<methods>
+					<include name="landscape" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

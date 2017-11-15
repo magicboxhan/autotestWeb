@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite_zhihuiya_searchResult]">
+  <parameter name="" value=""/>
+  <parameter name="searchPage_field" value="TTL"/>
+  <parameter name="searchPage_keyword" value="method"/>
+  <parameter name="loginPage_pwd" value="123456"/>
+  <parameter name="firefoxProfile" value="0"/>
+  <parameter name="searchPage_database" value="USA"/>
+  <parameter name="timeout_PageLoadTimeout" value="60"/>
+  <parameter name="browserType" value="ff"/>
+  <parameter name="searchResultPage_displayedFields" value="TITLE,AN,APD,PBD"/>
+  <parameter name="searchResultPage_defaultView" value="analysis"/>
+  <parameter name="searchQuery" value="trip1"/>
+  <parameter name="timeout_ImplicitlyWait" value="5"/>
+  <parameter name="timeout_ScriptLoadTimeout" value="60"/>
+  <parameter name="queryName" value="TestQuery"/>
+  <parameter name="ieDriverPath" value="E:\\autotest\\drivers\\IEDriverServer.exe"/>
+  <parameter name="loginPage_url" value="http://test.patsnap.com/"/>
+  <parameter name="loginPage_uid" value="hanqing@zhihuiya.com"/>
+  <parameter name="chromeDriverPath" value="E:\\autotest\\drivers\\chromedriver.exe"/>
+  <parameter name="searchResultPage_userListFolderLevel" value="2"/>
+  <test name="zhihuiya_searchResult_1(failed)">
+    <parameter name="searchResultPage_displayedFields" value="TITLE,AN,APD,PBD"/>
+    <parameter name="searchPage_field" value="TTL"/>
+    <parameter name="searchPage_keyword" value="method"/>
+    <parameter name="searchResultPage_defaultView" value="analysis"/>
+    <parameter name="searchQuery" value="trip1"/>
+    <parameter name="searchPage_database" value="USA"/>
+    <parameter name="queryName" value="TestQuery"/>
+    <parameter name="searchResultPage_userListFolderLevel" value="2"/>
+    <classes>
+      <class name="Zhihuiya_regressionTest">
+        <methods>
+          <include name="teardown_suite"/>
+          <include name="setup_test"/>
+          <include name="setup_suite"/>
+          <include name="teardown_test"/>
+          <include name="searchResult_1" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Zhihuiya_regressionTest -->
+    </classes>
+  </test> <!-- zhihuiya_searchResult_1(failed) -->
+</suite> <!-- Failed suite [Suite_zhihuiya_searchResult] -->

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite_zhihuiya_misc" parallel="false">
+	<!-- basic -->
+	<parameter name="browserType" value="ff" />
+	<parameter name="chromeDriverPath" value="E:\\autotest\\drivers\\chromedriver.exe" />
+	<parameter name="ieDriverPath" value="E:\\autotest\\drivers\\IEDriverServer.exe" />
+	<parameter name="timeout_ImplicitlyWait" value="5" />
+	<parameter name="timeout_PageLoadTimeout" value="60" />
+	<parameter name="timeout_ScriptLoadTimeout" value="60" />
+	<parameter name="firefoxProfile" value="0" />
+	<!-- account -->
+	<parameter name="loginPage_url" value="http://www.patsnap.com/" />
+	<parameter name="loginPage_uid" value="hanqing@zhihuiya.com" />
+	<parameter name="loginPage_pwd" value="123456" />
+	<!-- database -->
+	<parameter name="" value="" />
+	
+	<test name="zhihuiya_search_1" preserve-order="true">
+		<parameter name="searchPage_database" value="ALL_DB" />
+		<parameter name="searchPage_field" value="PN" />
+		<parameter name="searchPage_keyword" value="US650000" />
+		<parameter name="searchPage_exclusionField" value="Publication Number" />
+		<parameter name="searchPage_exclusionKeyword" value="US6500001 OR US6500002" />
+		<parameter name="searchPage_cmd_conditions" value=" , AND, OR, NOT" />
+		<parameter name="searchPage_cmd_fields" value="Publication Number, Publication Number, Publication Number, Publication Number" />
+		<parameter name="searchPage_cmd_keywords" value="US650000, US6500001, US6500002, US6500002" />
+		<parameter name="searchPage_bulkSearch_keyword" value="EP0867397B2" />
+		<parameter name="searchPage_bulkSearch_targetPN" value="EP0867397B1" />
+		<classes>
+			<class name="Zhihuiya_regressionTest">
+				<methods>
+					<include name="search_1" />
+					<include name="search_2" />
+					<include name="search_3" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="zhihuiya_analysis_1" preserve-order="true">
+		<parameter name="searchPage_database" value="ALL_DB" />
+		<parameter name="searchPage_field" value="TTL" />
+		<parameter name="searchPage_keyword" value="trip" />
+		<parameter name="firefoxProfile" value="1" />
+		<parameter name="download_path" value="C:/selenium_download" />
+		<classes>
+			<class name="Zhihuiya_regressionTest">
+				<methods>
+					<include name="analysis_1" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	
+
+</suite>

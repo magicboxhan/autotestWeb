@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite_zhihuiya_userList" parallel="false">
+	<!-- basic -->
+	<parameter name="browserType" value="ff" />
+	<parameter name="chromeDriverPath" value="E:\\autotest\\drivers\\chromedriver.exe" />
+	<parameter name="ieDriverPath" value="E:\\autotest\\drivers\\IEDriverServer.exe" />
+	<parameter name="timeout_ImplicitlyWait" value="5" />
+	<parameter name="timeout_PageLoadTimeout" value="60" />
+	<parameter name="timeout_ScriptLoadTimeout" value="60" />
+	<parameter name="firefoxProfile" value="0" />
+	<!-- account -->
+	<parameter name="loginPage_url" value="http://analytics.patsnap.com/" />
+	<parameter name="loginPage_uid" value="patsnappro@126.com" />
+	<parameter name="loginPage_pwd" value="zhihuiya123" />
+	<parameter name="loginPage_uid1" value="test1@123.com" />
+	<parameter name="loginPage_pwd1" value="111111"/>
+	<!-- database -->
+	<parameter name="" value="" />
+
+	<test name="Create Parent Folder from Userlist Page " preserve-order="true">
+		<parameter name="ExpFolder" value="New Folder" />
+		<parameter name="Folder1" value="Eng中" />
+		<parameter name="FolderName" value="~!@#$%^*()_+}{" />
+		<parameter name="FolderName2" value="1234567890" />
+		<parameter name="FolderName3" value="&lt;body>Eng中&lt;head>"/>
+		<parameter name="FolderName4" value="te st" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_userlist">
+				<methods>
+					<include name="userlist_Pat_784" />
+					<include name="userlist_Pat_785" />
+					<include name="userlist_Pat_786" />
+					<include name="userlist_Pat_787" />
+					<include name="userlist_Pat_791" />
+					<include name="userlist_Pat_792" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Create Parent Folder from SRP Page " preserve-order="true">
+		<parameter name="Query" value="trip" />
+		<parameter name="Folder1" value="Eng中" />
+		<parameter name="ExpFolder1" value="New Folder1" />
+		<parameter name="FolderName" value="~!@#$%^*()_+}{" />
+		<parameter name="FolderName2" value="1234567890" />
+		<parameter name="FolderName4" value="te st" />
+	    <parameter name="FolderName3" value="&lt;body>Eng中&lt;head>"/>
+		<classes>
+			<class name="Zhihuiya_regressionTest_userlist">
+				<methods>
+					<include name="userlist_Pat_805" />
+					<include name="userlist_Pat_808" />
+					<include name="userlist_Pat_809" />
+					<include name="userlist_Pat_810" />
+					<include name="userlist_Pat_812" />
+					<include name="userlist_Pat_813" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Create Parent Folder from Bulk Search Page " preserve-order="true">
+		<parameter name="PublicationNumber" value="JP1991259010A" />
+		<parameter name="ExpFolder" value="New Folder" />
+		<parameter name="FolderName" value="~!@#$%^*()_+}{" />
+		<parameter name="Folder1" value="Eng中" />
+		<parameter name="FolderName2" value="1234567890" />
+		<parameter name="FolderName4" value="te st" />
+	    <parameter name="FolderName3" value="&lt;body>Eng中&lt;head>"/>
+		<classes>
+			<class name="Zhihuiya_regressionTest_userlist">
+				<methods>
+					<include name="userlist_Pat_864" />
+					<include name="userlist_Pat_865" />
+					<include name="userlist_Pat_866" />
+					<include name="userlist_Pat_867" />
+					<include name="userlist_Pat_868" />
+					<include name="userlist_Pat_869" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Create Parent Folder from Patent View Page " preserve-order="true">
+		<parameter name="Query" value="trip" />
+		<parameter name="FolderName2" value="1234567890" />
+		<parameter name="ExpFolder" value="New Folder" />
+		<parameter name="Folder1" value="Eng中" />
+		<parameter name="FolderName" value="~!@#$%^*()_+}{" />
+		<parameter name="FolderName4" value="te st" />
+		<parameter name="FolderName3" value="&lt;body>Eng中&lt;head>"/>
+		<classes>
+			<class name="Zhihuiya_regressionTest_userlist">
+				<methods>
+					<include name="userlist_Pat_815" />
+					<include name="userlist_Pat_816" />
+					<include name="userlist_Pat_817" />
+					<include name="userlist_Pat_818" />
+					<include name="userlist_Pat_819" />
+					<include name="userlist_Pat_820" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Create Child Folder from Userlist Page " preserve-order="true">
+		<parameter name="ExpFolder" value="New Folder" />
+		<parameter name="ParentFolder" value="ParentFolder" />
+		<parameter name="FolderName1" value="Eng中" />
+		<parameter name="FolderName" value="~!@#$%^*()_+}{" />
+		<parameter name="FolderName2" value="1234567890" />
+		<parameter name="FolderName4" value="te st" />
+		<parameter name="FolderName3" value="&lt;body>Eng中&lt;head>"/>
+		<classes>
+			<class name="Zhihuiya_regressionTest_userlist">
+				<methods>
+					<include name="userlist_Pat_828" />
+					<include name="userlist_Pat_832" />
+					<include name="userlist_Pat_833" />
+					<include name="userlist_Pat_834" />
+					<include name="userlist_Pat_835" />
+					<include name="userlist_Pat_838" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Create Child Folder from SRP Page " preserve-order="true">
+		<parameter name="Query" value="trip" />
+		<parameter name="ExpFolder" value="New Folder2" />
+		<parameter name="FolderName1" value="Eng中" />
+		<parameter name="ParentFolder" value="ParentFolder" />
+		<parameter name="FolderName" value="~!@#$%^*()_+}{" />
+		<parameter name="FolderName2" value="1234567890" />
+		<parameter name="FolderName4" value="te st" />
+		<parameter name="FolderName3" value="&lt;body>Eng中&lt;head>"/>
+		<classes>
+			<class name="Zhihuiya_regressionTest_userlist">
+				<methods>
+					<include name="userlist_Pat_870" />
+					<include name="userlist_Pat_871" />
+					<include name="userlist_Pat_872" />
+					<include name="userlist_Pat_873" />
+					<include name="userlist_Pat_874" />
+					<include name="userlist_Pat_875" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Create Child Folder from Bulk Search Page " preserve-order="true">
+		<parameter name="PublicationNumber" value="JP1991259010A" />
+		<parameter name="FolderName" value="~!@#$%^*()_+}{" />
+		<parameter name="ParentFolder" value="ParentFolder" />
+		<parameter name="ExpFolder" value="New Folder" />
+		<parameter name="FolderName1" value="Eng中" />
+		<parameter name="FolderName2" value="1234567890" />
+		<parameter name="FolderName4" value="te st" />
+		<parameter name="FolderName3" value="&lt;body>Eng中&lt;head>"/>
+		<classes>
+			<class name="Zhihuiya_regressionTest_userlist">
+				<methods>
+					<include name="userlist_Pat_793" />
+					<include name="userlist_Pat_796" />
+					<include name="userlist_Pat_797" />
+					<include name="userlist_Pat_798" />
+					<include name="userlist_Pat_799" />
+					<include name="userlist_Pat_800" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Create Child Folder from Patent View Page " preserve-order="true">
+		<parameter name="Query" value="trip" />
+		<parameter name="FolderName2" value="1234567890" />
+		<parameter name="ParentFolder" value="ParentFolder" />
+		<parameter name="FolderName" value="~!@#$%^*()_+}{" />
+		<parameter name="ExpFolder" value="New Folder" />
+		<parameter name="FolderName1" value="Eng中" />
+		<parameter name="FolderName4" value="te st" />
+		<parameter name="FolderName3" value="&lt;body>Eng中&lt;head>"/>
+		<classes>
+			<class name="Zhihuiya_regressionTest_userlist">
+				<methods>
+					<include name="userlist_Pat_876" />
+					<include name="userlist_Pat_877" />
+					<include name="userlist_Pat_878" />
+					<include name="userlist_Pat_879" />
+					<include name="userlist_Pat_880" />
+					<include name="userlist_Pat_881" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Edit Parent Folder from Userlist Page " preserve-order="true">
+		<parameter name="PreFolder" value="PreFolder" />
+		<parameter name="EditName1" value="PreFolder" />
+		<parameter name="EditName2" value="Eng中" />
+		<parameter name="EditName3" value="0987654321" />
+		<parameter name="EditName4" value="~!@#$%^*()_+}{" />
+		<parameter name="EditName5" value="te st" />
+		<parameter name="EditName6" value="&lt;body>Eng中&lt;head>" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_userlist">
+				<methods>
+					<include name="userlist_Pat_910" />
+					<include name="userlist_Pat_911" />
+					<include name="userlist_Pat_914" />
+					<include name="userlist_Pat_917" />
+					<include name="userlist_Pat_920" />
+					<include name="userlist_Pat_922" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Edit Parent Folder from SRP Page " preserve-order="true">
+		<parameter name="Query" value="trip" />
+		<parameter name="PreFolder" value="PreFolder" />
+		<parameter name="EditName1" value="PreFolder" />
+		<parameter name="EditName2" value="Eng中" />
+		<parameter name="EditName3" value="0987654321" />
+		<parameter name="EditName4" value="~!@#$%^*()_+}{" />
+		<parameter name="EditName5" value="te st" />
+		<parameter name="EditName6" value="&lt;body>Eng中&lt;head>" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_userlist">
+				<methods>
+					<include name="userlist_Pat_962" />
+					<include name="userlist_Pat_963" />
+					<include name="userlist_Pat_964" />
+					<include name="userlist_Pat_965" />
+					<include name="userlist_Pat_966" />
+					<include name="userlist_Pat_967" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Edit Parent Folder from Bulk Search Page " preserve-order="true">
+	<parameter name="PublicationNumber" value="JP1991259010A" />
+	<parameter name="PreFolder" value="PreFolder" />
+		<parameter name="EditName1" value="PreFolder" />
+		<parameter name="EditName2" value="Eng中" />
+		<parameter name="EditName3" value="0987654321" />
+		<parameter name="EditName4" value="~!@#$%^*()_+}{" />
+		<parameter name="EditName5" value="te st" />
+		<parameter name="EditName6" value="&lt;body>Eng中&lt;head>" />
+	<classes>
+		<class name="Zhihuiya_regressionTest_userlist">
+			<methods>
+				<include name="userlist_Pat_930" />
+				<include name="userlist_Pat_931" />
+				<include name="userlist_Pat_939" />
+				<include name="userlist_Pat_940" />
+				<include name="userlist_Pat_948" />
+				<include name="userlist_Pat_949" />
+			</methods>
+		</class>
+	</classes>
+</test>
+	<test name="Edit Parent Folder from Patent View Page " preserve-order="true">
+		<parameter name="Query" value="trip" />
+		<parameter name="PreFolder" value="PreFolder" />
+		<parameter name="EditName1" value="PreFolder" />
+		<parameter name="EditName2" value="Eng中" />
+		<parameter name="EditName3" value="0987654321" />
+		<parameter name="EditName4" value="~!@#$%^*()_+}{" />
+		<parameter name="EditName5" value="te st" />
+		<parameter name="EditName6" value="&lt;body>Eng中&lt;head>" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_userlist">
+				<methods>
+					<include name="userlist_Pat_950" />
+					<include name="userlist_Pat_952" />
+					<include name="userlist_Pat_953" />
+					<include name="userlist_Pat_954" />
+					<include name="userlist_Pat_955" />
+					<include name="userlist_Pat_956" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Edit Child Folder from Userlist Page " preserve-order="true">
+		<parameter name="PreFolder" value="PreFolder" />
+		<parameter name="PreChildFolder" value="PreChildFolder" />
+		<parameter name="EditName1" value="PreChildFolder" />
+		<parameter name="EditName2" value="Eng中" />
+		<parameter name="EditName3" value="0987654321" />
+		<parameter name="EditName4" value="~!@#$%^*()_+}{" />
+		<parameter name="EditName5" value="te st" />
+		<parameter name="EditName6" value="&lt;body>Eng中&lt;head>" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_userlist">
+				<methods>
+					<include name="userlist_Pat_974" />
+					<include name="userlist_Pat_975" />
+					<include name="userlist_Pat_976" />
+					<include name="userlist_Pat_977" />
+					<include name="userlist_Pat_978" />
+					<include name="userlist_Pat_979" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Edit Child Folder from SRP Page " preserve-order="true">
+		<parameter name="PreFolder" value="PreFolder" />
+		<parameter name="PreChildFolder" value="PreChildFolder" />
+		<parameter name="Query" value="trip" />
+		<parameter name="EditName1" value="PreChildFolder" />
+		<parameter name="EditName2" value="Eng中" />
+		<parameter name="EditName3" value="0987654321" />
+		<parameter name="EditName4" value="~!@#$%^*()_+}{" />
+		<parameter name="EditName5" value="te st" />
+		<parameter name="EditName6" value="&lt;body>Eng中&lt;head>" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_userlist">
+				<methods>
+					<include name="userlist_Pat_998" />
+					<include name="userlist_Pat_999" />
+					<include name="userlist_Pat_1000" />
+					<include name="userlist_Pat_1001" />
+					<include name="userlist_Pat_1002" />
+					<include name="userlist_Pat_1003" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Edit Child Folder from Bulk Search Page " preserve-order="true">
+		<parameter name="PublicationNumber" value="JP1991259010A" />
+		<parameter name="PreFolder" value="PreFolder" />
+		<parameter name="PreChildFolder" value="PreChildFolder" />
+		<parameter name="EditName1" value="PreChildFolder" />
+		<parameter name="EditName2" value="Eng中" />
+		<parameter name="EditName3" value="0987654321" />
+		<parameter name="EditName4" value="~!@#$%^*()_+}{" />
+		<parameter name="EditName5" value="te st" />
+		<parameter name="EditName6" value="&lt;body>Eng中&lt;head>" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_userlist">
+				<methods>
+					<include name="userlist_Pat_984" />
+					<include name="userlist_Pat_985" />
+					<include name="userlist_Pat_986" />
+					<include name="userlist_Pat_987" />
+					<include name="userlist_Pat_988" />
+					<include name="userlist_Pat_989" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Edit Child Folder from Patent View Page " preserve-order="true">
+		<parameter name="PreFolder" value="PreFolder" />
+		<parameter name="PreChildFolder" value="PreChildFolder" />
+		<parameter name="Query" value="trip" />
+		<parameter name="EditName1" value="PreChildFolder" />
+		<parameter name="EditName2" value="Eng中" />
+		<parameter name="EditName3" value="0987654321" />
+		<parameter name="EditName4" value="~!@#$%^*()_+}{" />
+		<parameter name="EditName5" value="te st" />
+		<parameter name="EditName6" value="&lt;body>Eng中&lt;head>" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_userlist">
+				<methods>
+					<include name="userlist_Pat_991" />
+					<include name="userlist_Pat_992" />
+					<include name="userlist_Pat_993" />
+					<include name="userlist_Pat_994" />
+					<include name="userlist_Pat_995" />
+					<include name="userlist_Pat_996" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Delete folder from Userlist page " preserve-order="true">
+		<parameter name="ParentFolder" value="ParentFolder" />
+		<parameter name="ChildFolder" value="ChildFolder" />
+		<parameter name="PreFolder" value="PreFolder" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_userlist">
+				<methods>
+					<include name="userlist_Pat_1062" />
+					<include name="userlist_Pat_1063" />
+					<include name="userlist_Pat_1065" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Check the expand function " preserve-order="true">
+		<parameter name="ParentFolder" value="ParentFolder" />
+		<parameter name="ChildFolder" value="ChildFolder" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_userlist">
+				<methods>
+					<include name="userlist_Pat_1969" />
+					<include name="userlist_Pat_1970" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Share folder " preserve-order="true">
+		<parameter name="ParentFolder" value="ParentFolder" />
+		<parameter name="ChildFolder" value="ChildFolder" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_userlist">
+				<methods>
+					<include name="userlist_Pat_1083" />
+					<include name="userlist_Pat_1087" />
+					<include name="userlist_Pat_1090" />
+					<include name="userlist_Pat_1094" />
+					<include name="userlist_Pat_1098" />
+					<include name="userlist_Pat_1099" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Manual Collect Patents into parent folder from SRP_Table View(Selected patent records) " preserve-order="true">
+		<parameter name="Query" value="trip" />
+		<parameter name="ManualAddList" value="ManualAddList" />
+		<parameter name="PageNum" value="10" />
+		<parameter name="pnIndexes1" value="1,2,3,4,5" />
+		<parameter name="pnIndexes2" value="1,3,5,7,9" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_userlist">
+				<methods>
+					<include name="userlist_Pat_5145" />
+					<include name="userlist_Pat_5146" />
+					<include name="userlist_Pat_5147" />
+					<include name="userlist_Pat_5148" />
+					<include name="userlist_Pat_5149" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Auto Collect Patents " preserve-order="true">
+		<parameter name="LongQuery" value='((((((TTL:(car) OR ABST:(car))))))) AND ((AN_S:"HYUNDAI MOTOR COMPANY" OR AN_S:"KIA MOTORS CORPORATION" OR AN_S:"NISSAN MOTOR CO LTD") AND (APD_YEAR:"2013" OR APD_YEAR:"2014" OR APD_YEAR:"2012" OR APD_YEAR:"2011" OR APD_YEAR:"2010"))' />
+		<parameter name="AutoList" value="AutoList" />
+		<parameter name="Exp_info" value="There are no patent records in this list. Try searching for some patents and then click ‘Add to List’." />
+		<classes>
+			<class name="Zhihuiya_regressionTest_userlist">
+				<methods>
+					<include name="userlist_Pat_1168" />
+					<include name="userlist_Pat_1172" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Drag Patents to Copy" preserve-order="true">
+		<parameter name="Folder" value="Folder"/>
+		<parameter name="ShareFolder" value="ShareFolder" />
+		<parameter name="ParFolder" value="ParFolder" />
+		<parameter name="ChildFolder" value="ChildFolder" />
+		<parameter name="Query" value='((((((TTL:(car) OR ABST:(car))))))) AND ((AN_S:"HYUNDAI MOTOR COMPANY" OR AN_S:"KIA MOTORS CORPORATION" OR AN_S:"NISSAN MOTOR CO LTD") AND (APD_YEAR:"2013" OR APD_YEAR:"2014" OR APD_YEAR:"2012" OR APD_YEAR:"2011" OR APD_YEAR:"2010"))'/>
+		<classes>
+			<class name="Zhihuiya_regressionTest_userlist">
+				<methods>
+					<include name="userlist_Pat_1214" />
+					<include name="userlist_Pat_1225" />
+					<include name="userlist_Pat_1771" />
+					<include name="userlist_Pat_1776" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Drag Patents to Move" preserve-order="true">
+		<parameter name="Folder" value="Folder"/>
+		<parameter name="ShareFolder" value="ShareFolder" />
+		<parameter name="ParFolder" value="ParFolder" />
+		<parameter name="ChildFolder" value="ChildFolder" />
+		<parameter name="Query" value='((((((DESC:(car))))))) AND ((AN_S:"INTERNATIONAL BUSINESS MACHINES CORPORATION" OR AN_S:"MICROSOFT CORPORATION") AND (APD_YEAR:"2014") AND (ICL_S:"G06F17/30" OR ICL_S:"G06F3/01" OR ICL_S:"G06K9/00" OR ICL_S:"H04W4/02" OR ICL_S:"G06Q30/02"))'/>
+		<classes>
+			<class name="Zhihuiya_regressionTest_userlist">
+				<methods>
+					<include name="userlist_Pat_1230" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+</suite>

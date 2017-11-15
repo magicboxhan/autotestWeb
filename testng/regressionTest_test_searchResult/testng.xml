@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite_zhihuiya_searchResult" parallel="false">
+	<!-- basic -->
+	<parameter name="browserType" value="ff"/>
+	<parameter name="chromeDriverPath" value="E:\\autotest\\drivers\\chromedriver.exe"/>
+	<parameter name="ieDriverPath" value="E:\\autotest\\drivers\\IEDriverServer.exe"/>
+	<parameter name="timeout_ImplicitlyWait" value="5"/>
+	<parameter name="timeout_PageLoadTimeout" value="60"/>
+	<parameter name="timeout_ScriptLoadTimeout" value="60"/>
+	<parameter name="firefoxProfile" value="0"/>
+	<!-- account -->
+	<parameter name="loginPage_url" value="http://test-analytics.patsnap.com/"/>
+	<parameter name="loginPage_uid" value="zhangshu@patsnap.com"/>
+	<parameter name="loginPage_pwd" value="zhangshu"/>
+	<parameter name="languageType" value="2"/>
+	<parameter name="fieldSearch" value="car"/>
+	<parameter name="binaryQuery" value="bus"/>
+
+	//————————————————————————————————binary————————————————————————————————————————
+	<test name="Pat-685" preserve-order="true">
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="searchResultBinary"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	//——————————————————————————————refine with single option————————————
+	//——AssigneeName———ApplicationYear———InventorName———InternationalClassification——locarnoClassification——legalStatus
+	<test name="Pat-713" preserve-order="true">
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="refineAssigneeName"/>
+					<include name="refineApplicationYear"/>
+					<include name="refineInventorName"/>
+					<include name="refineInternationalClassification"/>
+					<include name="refineLocarnoClassification"/>
+					<include name="refineLegalStatus"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	//——————————————————————————————Clear——————————————————————————————
+	<test name="Pat-846" preserve-order="true">
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="searchResultClear"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	//—————————————————————————————Change logic word between filters ——————————————————————
+	<test name="Pat-829" preserve-order="true">
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="filterShownBoxChangeLogicWords"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	//——————————————————————————————Add and Delete filter options in shown box——————————————————————————————————————————
+	<test name="Pat-827" preserve-order="true">
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="filterShownBoxoOptionDelete"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	//——————————————————————————————Link of recent query link———————————————————————————————————————————————————————————
+	<test name="Pat-969" preserve-order="true">
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="recentLink"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	//——————————————————————————————Recent Save—————————————————————————————————————————————————————————————————————————
+
+	<test name="Pat-1024" preserve-order="true">
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="recentQuerySave"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	//——————————————————————————————Recent————————————————————————————————————————————————
+	MoreSearcHistory—————————————————————————————————————————————————————————————————————————
+	<test name="Pat-1027" preserve-order="true">
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="moreSearchHistory"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	//—————————————————————————————————————————tableView结果各字段链接————————————————————————————————————————————————————
+	//—————————————————————————————————————TableView title link—————————————————————————————————————————————————————————
+	<test name="Pat-1109" preserve-order="true">
+		<parameter name="toPVP" value="TITLE"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="linkOfTitleAndPn"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	//—————————————————————————————————————Tableview Pn Link———————————————————————————————————————————————————————————
+	<test name="Pat-1105" preserve-order="true">
+		<parameter name="toPVP" value="PN"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="linkOfTitleAndPn"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	//————————————————————————————————————Tableview AssigneeName Link———————————————————————————————————————————————————
+	<test name="Pat-1108-1" preserve-order="true">
+		<parameter name="toSRP" value="AN"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="linkOfOthers"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	//————————————————————————————————————————TableView Application Number Link————————————————————————————————————————
+	<test name="Pat-1108-2" preserve-order="true">
+		<parameter name="toSRP" value="APN"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="linkOfOthers"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	//————————————————————————————————————————TableView Assignee Address
+	Link————————————————————————————————————————————
+	<test name="Pat-1108-3" preserve-order="true">
+		<parameter name="toSRP" value="AN_ADD"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="linkOfOthers"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	//————————————————————————————————————————TableView Standardized Assignee
+	Link————————————————————————————————————————————
+	<test name="Pat-1108-4" preserve-order="true">
+		<parameter name="toSRP" value="AN_ST"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="linkOfOthers"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	//————————————————————————————————————————TableView Inventor Name Link————————————————————————————————————————————
+	<test name="Pat-1108-5" preserve-order="true">
+		<parameter name="toSRP" value="IN"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="linkOfOthers"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	//————————————————————————————————————————TableView Attorney Name Link————————————————————————————————————————————
+	<test name="Pat-1108-6" preserve-order="true">
+		<parameter name="toSRP" value="AT"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="linkOfOthers"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	//————————————————————————————————————————TableView Standardized Inventor
+	Link————————————————————————————————————————————
+	<test name="Pat-1108-7" preserve-order="true">
+		<parameter name="toSRP" value="IN_ST"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="linkOfOthers"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	//————————————————————————————————————————TableView Agency Link————————————————————————————————————————————
+	<test name="Pat-1108-8" preserve-order="true">
+		<parameter name="toSRP" value="ATC"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="linkOfOthers"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	//————————————————————————————————————————TableView International Classification Link————————————————————————————————————————————
+	<test name="Pat-1108-9" preserve-order="true">
+		<parameter name="toSRP" value="IPC"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="linkOfOthers"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	//—————————————————————————————————————————TableView Page Number————————————————————————————————————————————————————————
+	<test name="Pat-1555" preserve-order="true">
+		<parameter name="indexOfPageNumber" value="3"/>
+		<parameter name="patentNumberPerPage" value="0"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="clickPageNumber"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	//——————————————————————————————————————————TableView PageNumber Jump To——————————————————————————————————————————
+	<test name="Pat-1551" preserve-order="true">
+		<parameter name="pageNumber" value="10"/>
+		<parameter name="patentPerPage" value="0"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="jumpTo"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	//——————————————————————————StandardView Publication Number link————————————————————————————————————————————————
+
+	<test name="Pat-3094" preserve-order="true">
+		<parameter name="index" value="0"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="standardViewClickPn"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	//———————————————————————————StandardView Title link————————————————————————————————————————————————————————
+	<test name="Pat-3095" preserve-order="true">
+		<parameter name="index" value="0"/>
+		<parameter name="title" value="TITLE"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="standardViewClickTitle"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	//———————————————————————————StandardView inventorName link————————————————————————————————————————————————————————
+	<test name="Pat-3096" preserve-order="true">
+		<parameter name="index" value="3"/>
+		<parameter name="indexin" value="0"/>
+		<parameter name="inventorname" value="IN"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="standardViewClickInventorName"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	//OKR————————————————————————————————————————————————————————————————————————————————————————————————————
+	//————————————————————————————————————————————————————————————————————————————————————————————————————————
+	//_____________________________________refine_____________________________________________________________
+	<test name="Pat-825" preserve-order="true">
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat825"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Pat-831" preserve-order="true">
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat831"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Pat-715" preserve-order="true">
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat715"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Pat-726" preserve-order="true">
+		<parameter name="index" value="1"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat726"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Pat-727" preserve-order="true">
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat727"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Pat-788" preserve-order="true">
+		<parameter name="index1" value="1"/>
+		<parameter name="index2" value="2"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat788"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Pat-789" preserve-order="true">
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat789"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Pat-790" preserve-order="true">
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat790"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Pat-794" preserve-order="true">
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat794"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Pat-795" preserve-order="true">
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat795"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Pat-801" preserve-order="true">
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat801"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Pat-802" preserve-order="true">
+		<parameter name="index" value="1"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat802"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Pat-803" preserve-order="true">
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat803"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	//__________________________________________________________________________________________________
+	//__________________________________________clear___________________________________________________
+	//__________________________________________________________________________________________________
+	<test name="Pat-845" preserve-order="true">
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat845"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Pat-847" preserve-order="true">
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat847"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-848" preserve-order="true">
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat848"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Pat-850" preserve-order="true">
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat849"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Pat-850" preserve-order="true">
+		<parameter name="index1" value="1"/>
+		<parameter name="index2" value="2"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat850"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Pat-851" preserve-order="true">
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat851"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-852" preserve-order="true">
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat852"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-860" preserve-order="true">
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat860"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-862" preserve-order="true">
+		<parameter name="index" value="0"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat862"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Pat-882" preserve-order="true">
+		<parameter name="index" value="1"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat882"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Pat-900" preserve-order="true">
+		<parameter name="index" value="2"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat882"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-909" preserve-order="true">
+		<parameter name="index" value="3"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat882"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-941" preserve-order="true">
+		<parameter name="index" value="4"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat882"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-932" preserve-order="true">
+		<parameter name="index" value="5"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat882"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-923" preserve-order="true">
+		<parameter name="index" value="6"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat882"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-883" preserve-order="true">
+		<parameter name="index" value="1"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat883"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-901" preserve-order="true">
+		<parameter name="index" value="2"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat883"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Pat-912" preserve-order="true">
+		<parameter name="index" value="3"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat883"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Pat-942" preserve-order="true">
+		<parameter name="index" value="4"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat883"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Pat-933" preserve-order="true">
+		<parameter name="index" value="5"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat883"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Pat-924" preserve-order="true">
+		<parameter name="index" value="6"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat883"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Pat-884" preserve-order="true">
+		<parameter name="index" value="1"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat884"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-902" preserve-order="true">
+		<parameter name="index" value="2"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat884"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-913" preserve-order="true">
+		<parameter name="index" value="3"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat884"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-943" preserve-order="true">
+		<parameter name="index" value="4"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat884"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-934" preserve-order="true">
+		<parameter name="index" value="5"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat884"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Pat-2146" preserve-order="true">
+		<parameter name="index" value="6"/>
+		<classes>
+			<class name="Zhihuiya_searchresultpage_zs">
+				<methods>
+					<include name="pat884"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</suite>

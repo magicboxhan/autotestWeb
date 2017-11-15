@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite_Zhihuiya" parallel="false">
+	<!-- basic -->
+	<parameter name="browserType" value="ff" />
+	<parameter name="chromeDriverPath" value="E:\\autotest\\drivers\\chromedriver.exe" />
+	<parameter name="ieDriverPath" value="E:\\autotest\\drivers\\IEDriverServer.exe" />
+	<parameter name="timeout_ImplicitlyWait" value="5" />
+	<parameter name="timeout_PageLoadTimeout" value="600" />
+	<parameter name="timeout_ScriptLoadTimeout" value="300" />
+	<parameter name="firefoxProfile" value="1" />
+	<!-- account -->
+	<parameter name="loginPage_url" value="https://sme.patsnap.com/patents/index" />
+	<parameter name="loginPage_uid" value="hanqing@zhihuiya.com" />
+	<parameter name="loginPage_pwd" value="123456" />
+	<parameter name="language" value="1" />
+	
+	<test name="zhihuiya_loginLogout" preserve-order="true">
+		<classes>
+			<class name="Zhihuiya_smokeTest">
+				<methods>
+					<include name="loginLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="zhihuiya_search" preserve-order="true">
+		<parameter name="searchPage_database" value="ALL_DB" />
+		<parameter name="searchPage_field" value="TTL" />
+		<parameter name="searchPage_keyword" value="trip" />
+		<parameter name="searchResultPage_displayedFields" value="TITLE,AN,APD,PBD" />
+		<parameter name="searchResultPage_filePath" value="c:/lastSearchTotalNum_sme.txt" />
+		<parameter name="searchResultPage_imgCheckingNum" value="1" />
+		<parameter name="searchPage_bulkSearch_keyword" value="CN101111516B    JP1994100533A    US5865274    JP2010528644A    JP2004510416A    JP2004537297A    JP2002513804A    GB2460500A    JP4635001B2    CN103442768A    JP2014509841A    JP2014507118A    CN103492406A    US3561571    JP2003524384A    JP2010020558A    JP5203826B2    JP2013506419A    JP2004504809A    JP4176997B2    WO2011069043A2    CN103596981A    US8240762    WO2012118778A1    US3614997    CN101103933A    JP2014510108A    JP2007513603A    US20130200671A1    JP2007516419A    CN102014109A    JP2014505884A    JP2008540340A    JP2014504294A    US20090298762A1    USR29543    JP1998500849A    JP2007531507A    US4037688    US20100211511A1    JP2007503843A    US7047889    US4368793    CN102799857A    JP2013215104A    JP2011512834A    US4046227    US3625311    CN103502438A    JP2012501180A    JP2009033986A    CN101184711A    JP2008510457A    JP2004535755A    US3648805    CN1819588A    JP2002509073A    US3895692    US5480005    JP2005503173A    CN1889511B    EP1588152B1    EP1648920A2    US8412107    US3851733    CN101576991A    WO2008002954A2    US3584707    US3703222    US20060099056A1    EP1754033B1    JP3586191B2    EP2617604A1    US3851734    JP2005506839A    US20120034164A1    US4852695    JP2002101224A    US3605951    US7814248    JP2007504823A    JP2002510480A    US7201315    CN101478539B    US3854554    EP2338821A1    US7676801    WO2009038551A2    FR2987804A1    WO1997019878A1    US8155342    US20080140892A1    US5083640    US6516923    US4460308    CN101505783A    US7540358    US7315804    EP2261160A1    DE60215053T2    US20020059017A1    US4351404    US3851735    US6434576    CN101179486B    US4361200    US4355694    EP1604935A1    JP2006500909A    JP2002101157A    CN102752191A    WO1997019881A1    US20110315041A1    JP2005526489A    US6415302    US3807531    US6550400    US6659016    DE102013101814A1    CN101095173A    US3589473    WO2012066937A1    EP1000808B1    US7809871    US4783028    FR2508569A1    US4124102    US3739880    US20040172428A1    US4111284    US6117007    CN102731413A    JP2001285464A    WO1997019882A1    EP1741657A1    WO1993005473A1    JP2002520010A    WO2004034029A2    JP2006514538A    US7742848    WO1997019884A1    EP2332876A1    US20070257451A1    CN100555224C    US20120152661A1    US20040111444A1    US5777547    EP1749781A1    JP2007510621A    US4030571    US4046228    US6580373    US3804209    US3897807    JP2005253366A    JP2008522605A    US4029175    FR2860489A1    EP0783577B1    US4401190    WO2012021978A1    US6978863    WO1997019879A1    WO1997019883A1    US6003637    EP1231110A2    US6424977    US4304271    US4042810    US6543583    US7614481    US4379499    DE102009011647A1    US7457691    US20030041772A1    US7489786    US7565228    US3831715    US7721852    DE60303870T2    JP2010536349A    US20120279804A1    CN102131931A    DE102005044422A1    WO2004052485A2    US20120199041A2    US20040111451A1    US20120197488A1    US4473133    US20030038537A1    US4240527    EP0385810A1    WO1997019880A1    US7603954    US5758848    SG147463A1    US20070156303A1    DE602004003146T2    US20110198160A1    WO1997019877A1    US4047596    US20110000747A1    US6968788    EP0903313A2    EP1741659A4    US20120313796A1    US8662256    US6786305    US20090025198A1    EP2423066A3    US20130001021A1    US3837436    US6666148    US20110155515A1    US3750850    JP2008016020A    US20120118672A1    US7578373    CN101276286A    EP0328423A1    US3743057    WO1998011221A2    US4012019    US6539878    EP1870307A1    US3989390    US8145535    US20020152479A1    EP1262439A2    US20100324760A1    EP1685020A1    WO2009070143A1    EP1760025A1    US3682275    US7402106    US7178635    DE60218144T2    CN101484878A    JP2001518806A    JP2007525166A    EP0628054B1    EP1749778A1    US4762204    US6185581    JP1998245163A    FI72101C    US20070156302A1    US5300739    US20070131484A1    US7588127    US20040007151A1    EP2347987B1    SG89244A1    US20040111450A1    TW200832225A    CN101102323B    US7373888    US20070156307A1    US3929076    EP1741660A1    US20070179688A1    US20100133046A1    EP1876134A2    TWI242746B    GB2494346A    JP2002330789A    WO2009036232A2    US20070156304A1    US6920829    US20110017529A1    GB2324170A    US8132515    US5836423    EP1636964B1    JP2007503139A    US4007812    US20100293181A1    US7716020    US20130019773A1    US20050203025A1    US6075212    US7596433    US20080150335A1    US6550399    CN100492378C    WO2008095117A2    CN101045942A    JP2002513937A    KR1020090057037A    CN103635486A    US5253975    US5611285    US4081059    JP2008504039A    US20070156299A1    US20070156298A1    USR33849    WO2003104256A2    US20020010602A1    US7028002    US20040006775A1    EP0920689B1    US20040178652A1    FI772146A    US7568557    US5996505    US5660249    US5252790    US20130167751A1    EP0254605A1    EP2695838A1    US5722736    US4149613    JP2005534099A    WO2007125268A2    US20120118673A1    US7546185    FI57576B    US5529147    US8702169    US7255047    FR2830838A1    US3989391    WO2004053722A1    FR2860004A1    US4123115    US5657698    US5168135    US20100251923A1    US20070261591A1    US7434519    US3756159    US20040088338A1    US6250871    US6551039    CN103380657A    WO2001005762A2    FI74265C    JP1997504038A    US20050110315A1    US20120261511A1    US5314168    US8371236    FR2762284B1    US5331121    US5663538    JP2009166692A    US7423393    FR2795680A1    US4941197    US4765442    US3973649    WO2000027690A1    US3587785    EP0880032A1    EP1329124B1    EP1734467A1    US20060214503A1    US20030121622A1    US8596203    US7574962    WO2013087208A1    US4804069    US20070137517A1    WO2006011884A1    US5046912    US20110022545A1    US6655500    WO1981001548A1    US6449626    JP4101811B2    JP2003093083A    JP2006500902A    CN1659911A    US20140099309A1    US5999880    US20060021540A1    US5955708    CN102014948A    GB2341355A    US20070125604A1    US20020076291A1    US6334511    JP1996501448A    JP2004098827A    US4655325    US20120296501A1    US3967702    WO2001025048A1    US20110120813A1    JP2013529061A    US3875887    EP1754679A1    US20110285524A1    EP1068142A1    WO2004006208A1    CN1534926A    US3779346    EP0467673B1    CN102360530B    US7620943    US7461600    US20030171999A1    CN102375740A    US8439167    FI74264B    US5657835    US20110127118A1    TWI293181B    US20050052080A1    US7035884    US20010027368A1    FI885826A    US20120118194A1    US4964348    US5353413    US6695400    FR2717043A1    US6570608    US20070125603A1    US5316214    US20030229199A1    US6321160    US8428796    US4930427    CN102360530A    FR2862602A1    US20120073909A1    EP1914188B1    EP1961688A1    US20130138265A1    US20140099340A1    US20020026337A1    CN103278605A    WO2003070915A2    US20110265684A1    US4211608    US8037204    GB2414816B    US20120271547A1    US6983702    US4904154    US20020198637A1    US8136635    EP0905081A2    WO2008093081A2    US20110155514A1    US20030065429A1    WO2006052553A2    US20020124767A1    CN101228103B    US7032716    US20130058993A1    JP2003192700A    US20060202812A1    WO2004071800A1    US8118138    GB2246214A    CN1594552A    WO2013152052A2    US20100116597A1    CN103715730A    EP1017716A1    US3747710    EP0836167A1    US4193478    WO2013028628A2    US20020073884A1    FR2971001A1    US5091726    WO2007102640A1    US4766978    EP0863825A1    US7706937    US20100078266A1    US6364065    US3899981    US4893229    CN102948231A    US4646629    JP4861261B2    WO2007145613A2    US5483921    US5252789    US7549517    US4352410    EP2014599A1    US3857465    EP2206671A1    US20030060976A1    US5813350    EP1604900A1    US20110259674A1    US4785914    US6067502    US5651426    US20010035109A1    WO2001083546A1    US5959266    US5338143" />
+		<parameter name="searchPage_bulkSearch_expNum" value="500" />
+		<parameter name="searchPage_ipc_keyword" value="A01" />
+		<parameter name="firefoxProfile" value="1" />
+		<parameter name="download_path" value="C:/selenium_download" />
+		<classes>
+			<class name="Zhihuiya_smokeTest">
+				<methods>
+					<include name="fieldSearch" />
+					<include name="bulkSearch" />
+					<include name="ipcSearch" />
+					<include name="pDFDownloadOnSearchResultPage_tableView" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="zhihuiya_searchForAllFields" preserve-order="true">
+		<parameter name="searchPage_database" value="ALL_DB" />
+		<parameter name="searchPage_field" value="ALL,TTLABST,TTLABSTCLMS,TTL,ABST,CLMS,DESC,PN,APNO,CCL,ICL,LOC,IN,AN,INS,ANS,IN_ADDRESS,AN_ADDRESS,PE,AE,AT" />
+		<parameter name="searchPage_keyword" value="trip1,trip1,trip1,trip,trip1,trip1,trip1,EP1017716A4,EP1998944876,310,H04Q,09,MOORE,THE GENERAL HOSPITAL CORPORATION,BAES MYRIAM I,terry,terry,terry,terry,terry,terry" />
+		<classes>
+			<class name="Zhihuiya_smokeTest">
+				<methods>
+					<include name="searchForAllFields" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="zhihuiya_database" preserve-order="true">
+		<parameter name="searchPage_database" value="USA" />
+		<parameter name="searchPage_field" value="TTL" />
+		<parameter name="searchPage_keyword" value="trip" />
+		<classes>
+			<class name="Zhihuiya_smokeTest">
+				<methods>
+					<include name="database" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="zhihuiya_legalStatus" preserve-order="true">
+		<parameter name="timeout_ImplicitlyWait" value="30" />
+		<parameter name="searchPage_database" value="ALL_DB" />
+		<parameter name="searchPage_field" value="PN" />
+		<parameter name="searchPage_keyword" value="EP1017716A4" />
+		<classes>
+			<class name="Zhihuiya_smokeTest">
+				<methods>
+					<include name="legalStatus" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="zhihuiya_citation" preserve-order="true">
+		<parameter name="http_url" value="patent/getCitationDetail?mode=root&amp;pn=US5862574" />
+		<parameter name="testPN" value="US5862574" />
+		<classes>
+			<class name="Zhihuiya_smokeTest">
+				<methods>
+					<include name="citation" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="zhihuiya_exportExcel_basicFields" preserve-order="true">
+		<parameter name="loginPage_uid" value="patsnapautotest_ex@163.com" />
+		<parameter name="loginPage_pwd" value="autotest" />
+		<parameter name="wangyi_url" value="http://mail.163.com" />
+		<parameter name="wangyi_uid" value="patsnapautotest_ex" />
+		<parameter name="wangyi_pwd" value="autotest" />
+		<parameter name="wangyi_emailTimeout" value="60" />
+		<parameter name="firefoxProfile" value="1" />
+		<parameter name="searchPage_database" value="ALL_DB" />
+		<parameter name="searchPage_field" value="PN" />
+		<parameter name="searchPage_keyword" value="US650000" />
+		<parameter name="download_path" value="C:/selenium_download" />
+		<parameter name="emailTitle" value="Exported Patent Data from PatSnap Available for Download" />
+		<classes>
+			<class name="Zhihuiya_smokeTest">
+				<methods>
+					<include name="exportExcel_basicFields" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="zhihuiya_exportPDF" preserve-order="true">
+		<parameter name="loginPage_uid" value="patsnapautotest_ex@163.com" />
+		<parameter name="loginPage_pwd" value="autotest" />
+		<parameter name="wangyi_url" value="http://mail.163.com" />
+		<parameter name="wangyi_uid" value="patsnapautotest_ex" />
+		<parameter name="wangyi_pwd" value="autotest" />
+		<parameter name="wangyi_emailTimeout" value="60" />
+		<parameter name="firefoxProfile" value="1" />
+		<parameter name="searchPage_database" value="ALL_DB" />
+		<parameter name="searchPage_field" value="PN" />
+		<parameter name="searchPage_keyword" value="US650000" />
+		<parameter name="download_path" value="C:/selenium_download" />
+		<parameter name="emailTitle" value="Exported Patent Data from PatSnap Available for Download" />
+		<classes>
+			<class name="Zhihuiya_smokeTest">
+				<methods>
+					<include name="exportPDF" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="zhihuiya_imageDiscovery" preserve-order="true">
+		<parameter name="imageSearchPage_keyword" value="trip" />
+		<classes>
+			<class name="Zhihuiya_smokeTest">
+				<methods>
+					<include name="imageDiscovery" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<!-- 	<test name="zhihuiya_emailAlert" preserve-order="true"> -->
+<!-- 		<parameter name="searchPage_database" value="ALL_DB" /> -->
+<!-- 		<parameter name="searchPage_field" value="TTL" /> -->
+<!-- 		<parameter name="searchPage_keyword" value="trip" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="emailAlert" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+<!-- 	<test name="zhihuiya_analyzePatent" preserve-order="true"> -->
+<!-- 		<parameter name="searchPage_database" value="ALL_DB" /> -->
+<!-- 		<parameter name="searchPage_field" value="TTL" /> -->
+<!-- 		<parameter name="searchPage_keyword" value="trip" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="analyzePatent" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+<!-- 	<test name="zhihuiya_patentView" preserve-order="true"> -->
+<!-- 		<parameter name="firefoxProfile" value="1" /> -->
+<!-- 		<parameter name="searchPage_database" value="ALL_DB" /> -->
+<!-- 		<parameter name="searchPage_field" value="TTL" /> -->
+<!-- 		<parameter name="searchPage_keyword" value="trip" /> -->
+<!-- 		<parameter name="download_path" value="C:/selenium_download" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="patentView" /> -->
+<!-- 					<include name="pDFDownloadOnPatentViewPage" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+<!-- 	<test name="zhihuiya_patentFamily_legalStatus" preserve-order="true"> -->
+<!-- 		<parameter name="timeout_ImplicitlyWait" value="30" /> -->
+<!-- 		<parameter name="searchPage_database" value="ALL_DB" /> -->
+<!-- 		<parameter name="searchPage_field" value="PN" /> -->
+<!-- 		<parameter name="searchPage_keyword" value="EP1017716A4" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="patentFamily" /> -->
+<!-- 					<include name="legalStatus" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+<!-- 	<test name="zhihuiya_existingObjects" preserve-order="true"> -->
+<!-- 		<parameter name="savedSearch_searchName" value="AutoTest" /> -->
+<!-- 		<parameter name="savedSearch_emailAlertName" value="AutoTest" /> -->
+<!-- 		<parameter name="savedSearch_customDatabaseName" value="AutoTest" /> -->
+<!-- 		<parameter name="savedSearch_userListFolderName" value="AutoTest" /> -->
+<!-- 		<parameter name="savedSearch_userListPN" value="DE3474414D1" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="existingSavedSearch" /> -->
+<!-- 					<include name="existingEmailAlert" /> -->
+<!-- 					<include name="existingCustomDatabase" /> -->
+<!-- 					<include name="existingUserList" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+<!-- 	<test name="zhihuiya_landscapeHistory" preserve-order="true"> -->
+<!-- 		<parameter name="timeout_ImplicitlyWait" value="1" /> -->
+<!-- 		<parameter name="timeout_PageLoadTimeout" value="600" /> -->
+<!-- 		<parameter name="timeout_ScriptLoadTimeout" value="300" /> -->
+<!-- 		<parameter name="searchPage_database" value="ALL_DB" /> -->
+<!-- 		<parameter name="searchPage_field" value="TTL" /> -->
+<!-- 		<parameter name="searchPage_keyword" value="trip" /> -->
+<!-- 		<parameter name="landscapePage_sampingValue" value="100" /> -->
+<!-- 		<parameter name="landscapePage_sampingTimeout" value="150" /> -->
+<!-- 		<parameter name="landscapePage_retryTimes" value="1" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="landscapeHistory" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+<!-- 	<test name="zhihuiya_exportExcel_citedBy" preserve-order="true"> -->
+<!-- 		<parameter name="firefoxProfile" value="1" /> -->
+<!-- 		<parameter name="searchPage_database" value="ALL_DB" /> -->
+<!-- 		<parameter name="searchPage_field" value="PN" /> -->
+<!-- 		<parameter name="searchPage_keyword" value="US5862574" /> -->
+<!-- 		<parameter name="download_path" value="C:/selenium_download" /> -->
+<!-- 		<parameter name="http_url" value="patent/getCitationDetail?mode=root&amp;pn=US5862574" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="exportExcel_citedBy" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+<!-- 	<test name="zhihuiya_search_bak" preserve-order="true"> -->
+<!-- 		<parameter name="searchPage_exp_tableFields" value="		All,		Title / Abstract,		Title / Abstract / Claims,		Title,		Abstract,		Claims,		Description,		Publication Number,		Application Number,		US Classification, UPC Helper,		International Classification, IPC Helper,		Locarno Classification, LOC Helper,		Inventor Name,		Assignee Name,		Standardized Inventor,		Standardized Assignee,		Inventor Address,		Assignee Address,		Primary Examiner,		Assistant Examiner,		Attorney Name,		Type, Application Date, Publication Date, Priority Date,		Date Range, From Year, Month, Day, to Year, Month, Day		" /> -->
+<!-- 		<parameter name="searchPage_exp_userMenu" value=" 		History, 		Lists, 		Email Alert, 		Saved Search, 		Custom Database, 		My Analysis, 		Account, 		Release Log, 		Help Center, 		Features, 		Logout		" /> -->
+<!-- 		<parameter name="searchPage_exp_databaseList" value="		All databases,		EPO Patent, EPO Patent Application, EPO Issued Patent,		PCT Application,		United States Patent, United States Patent Application, United States Issued Patent, United States Design Patent,		China Patent, China Invention Application, China Issued Invention, China Utility China Design Patent,		Japan Invention Application,		Great Britain Patent,		France Patent,		German Patent, German Invention Application, German Issued Invention, German Utility,		Russia Patent,		Switzerland Patent,		Korea Invention Application,		Australia Patent,		Canada Patent,		Italy Patent,		Taiwan patent, Taiwan Invention Application, Taiwan Issued Invention, Taiwan Utility, Taiwan Design Patent		" /> -->
+<!-- 		<parameter name="searchPage_database" value="ALL_DB" /> -->
+<!-- 		<parameter name="searchPage_field" value="TTL" /> -->
+<!-- 		<parameter name="searchPage_keyword" value="trip" /> -->
+<!-- 		<parameter name="searchResultPage_filePath" value="c:/lastSearchTotalNum.txt" /> -->
+<!-- 		<parameter name="searchResultPage_imgCheckingNum" value="1" /> -->
+<!-- 		<parameter name="searchPage_bulkSearch_keyword" value="CN101111516B    JP1994100533A    US5865274    JP2010528644A    JP2004510416A    JP2004537297A    JP2002513804A    GB2460500A    JP4635001B2    CN103442768A    JP2014509841A    JP2014507118A    CN103492406A    US3561571    JP2003524384A    JP2010020558A    JP5203826B2    JP2013506419A    JP2004504809A    JP4176997B2    WO2011069043A2    CN103596981A    US8240762    WO2012118778A1    US3614997    CN101103933A    JP2014510108A    JP2007513603A    US20130200671A1    JP2007516419A    CN102014109A    JP2014505884A    JP2008540340A    JP2014504294A    US20090298762A1    USR29543    JP1998500849A    JP2007531507A    US4037688    US20100211511A1    JP2007503843A    US7047889    US4368793    CN102799857A    JP2013215104A    JP2011512834A    US4046227    US3625311    CN103502438A    JP2012501180A    JP2009033986A    CN101184711A    JP2008510457A    JP2004535755A    US3648805    CN1819588A    JP2002509073A    US3895692    US5480005    JP2005503173A    CN1889511B    EP1588152B1    EP1648920A2    US8412107    US3851733    CN101576991A    WO2008002954A2    US3584707    US3703222    US20060099056A1    EP1754033B1    JP3586191B2    EP2617604A1    US3851734    JP2005506839A    US20120034164A1    US4852695    JP2002101224A    US3605951    US7814248    JP2007504823A    JP2002510480A    US7201315    CN101478539B    US3854554    EP2338821A1    US7676801    WO2009038551A2    FR2987804A1    WO1997019878A1    US8155342    US20080140892A1    US5083640    US6516923    US4460308    CN101505783A    US7540358    US7315804    EP2261160A1    DE60215053T2    US20020059017A1    US4351404    US3851735    US6434576    CN101179486B    US4361200    US4355694    EP1604935A1    JP2006500909A    JP2002101157A    CN102752191A    WO1997019881A1    US20110315041A1    JP2005526489A    US6415302    US3807531    US6550400    US6659016    DE102013101814A1    CN101095173A    US3589473    WO2012066937A1    EP1000808B1    US7809871    US4783028    FR2508569A1    US4124102    US3739880    US20040172428A1    US4111284    US6117007    CN102731413A    JP2001285464A    WO1997019882A1    EP1741657A1    WO1993005473A1    JP2002520010A    WO2004034029A2    JP2006514538A    US7742848    WO1997019884A1    EP2332876A1    US20070257451A1    CN100555224C    US20120152661A1    US20040111444A1    US5777547    EP1749781A1    JP2007510621A    US4030571    US4046228    US6580373    US3804209    US3897807    JP2005253366A    JP2008522605A    US4029175    FR2860489A1    EP0783577B1    US4401190    WO2012021978A1    US6978863    WO1997019879A1    WO1997019883A1    US6003637    EP1231110A2    US6424977    US4304271    US4042810    US6543583    US7614481    US4379499    DE102009011647A1    US7457691    US20030041772A1    US7489786    US7565228    US3831715    US7721852    DE60303870T2    JP2010536349A    US20120279804A1    CN102131931A    DE102005044422A1    WO2004052485A2    US20120199041A2    US20040111451A1    US20120197488A1    US4473133    US20030038537A1    US4240527    EP0385810A1    WO1997019880A1    US7603954    US5758848    SG147463A1    US20070156303A1    DE602004003146T2    US20110198160A1    WO1997019877A1    US4047596    US20110000747A1    US6968788    EP0903313A2    EP1741659A4    US20120313796A1    US8662256    US6786305    US20090025198A1    EP2423066A3    US20130001021A1    US3837436    US6666148    US20110155515A1    US3750850    JP2008016020A    US20120118672A1    US7578373    CN101276286A    EP0328423A1    US3743057    WO1998011221A2    US4012019    US6539878    EP1870307A1    US3989390    US8145535    US20020152479A1    EP1262439A2    US20100324760A1    EP1685020A1    WO2009070143A1    EP1760025A1    US3682275    US7402106    US7178635    DE60218144T2    CN101484878A    JP2001518806A    JP2007525166A    EP0628054B1    EP1749778A1    US4762204    US6185581    JP1998245163A    FI72101C    US20070156302A1    US5300739    US20070131484A1    US7588127    US20040007151A1    EP2347987B1    SG89244A1    US20040111450A1    TW200832225A    CN101102323B    US7373888    US20070156307A1    US3929076    EP1741660A1    US20070179688A1    US20100133046A1    EP1876134A2    TWI242746B    GB2494346A    JP2002330789A    WO2009036232A2    US20070156304A1    US6920829    US20110017529A1    GB2324170A    US8132515    US5836423    EP1636964B1    JP2007503139A    US4007812    US20100293181A1    US7716020    US20130019773A1    US20050203025A1    US6075212    US7596433    US20080150335A1    US6550399    CN100492378C    WO2008095117A2    CN101045942A    JP2002513937A    KR1020090057037A    CN103635486A    US5253975    US5611285    US4081059    JP2008504039A    US20070156299A1    US20070156298A1    USR33849    WO2003104256A2    US20020010602A1    US7028002    US20040006775A1    EP0920689B1    US20040178652A1    FI772146A    US7568557    US5996505    US5660249    US5252790    US20130167751A1    EP0254605A1    EP2695838A1    US5722736    US4149613    JP2005534099A    WO2007125268A2    US20120118673A1    US7546185    FI57576B    US5529147    US8702169    US7255047    FR2830838A1    US3989391    WO2004053722A1    FR2860004A1    US4123115    US5657698    US5168135    US20100251923A1    US20070261591A1    US7434519    US3756159    US20040088338A1    US6250871    US6551039    CN103380657A    WO2001005762A2    FI74265C    JP1997504038A    US20050110315A1    US20120261511A1    US5314168    US8371236    FR2762284B1    US5331121    US5663538    JP2009166692A    US7423393    FR2795680A1    US4941197    US4765442    US3973649    WO2000027690A1    US3587785    EP0880032A1    EP1329124B1    EP1734467A1    US20060214503A1    US20030121622A1    US8596203    US7574962    WO2013087208A1    US4804069    US20070137517A1    WO2006011884A1    US5046912    US20110022545A1    US6655500    WO1981001548A1    US6449626    JP4101811B2    JP2003093083A    JP2006500902A    CN1659911A    US20140099309A1    US5999880    US20060021540A1    US5955708    CN102014948A    GB2341355A    US20070125604A1    US20020076291A1    US6334511    JP1996501448A    JP2004098827A    US4655325    US20120296501A1    US3967702    WO2001025048A1    US20110120813A1    JP2013529061A    US3875887    EP1754679A1    US20110285524A1    EP1068142A1    WO2004006208A1    CN1534926A    US3779346    EP0467673B1    CN102360530B    US7620943    US7461600    US20030171999A1    CN102375740A    US8439167    FI74264B    US5657835    US20110127118A1    TWI293181B    US20050052080A1    US7035884    US20010027368A1    FI885826A    US20120118194A1    US4964348    US5353413    US6695400    FR2717043A1    US6570608    US20070125603A1    US5316214    US20030229199A1    US6321160    US8428796    US4930427    CN102360530A    FR2862602A1    US20120073909A1    EP1914188B1    EP1961688A1    US20130138265A1    US20140099340A1    US20020026337A1    CN103278605A    WO2003070915A2    US20110265684A1    US4211608    US8037204    GB2414816B    US20120271547A1    US6983702    US4904154    US20020198637A1    US8136635    EP0905081A2    WO2008093081A2    US20110155514A1    US20030065429A1    WO2006052553A2    US20020124767A1    CN101228103B    US7032716    US20130058993A1    JP2003192700A    US20060202812A1    WO2004071800A1    US8118138    GB2246214A    CN1594552A    WO2013152052A2    US20100116597A1    CN103715730A    EP1017716A1    US3747710    EP0836167A1    US4193478    WO2013028628A2    US20020073884A1    FR2971001A1    US5091726    WO2007102640A1    US4766978    EP0863825A1    US7706937    US20100078266A1    US6364065    US3899981    US4893229    CN102948231A    US4646629    JP4861261B2    WO2007145613A2    US5483921    US5252789    US7549517    US4352410    EP2014599A1    US3857465    EP2206671A1    US20030060976A1    US5813350    EP1604900A1    US20110259674A1    US4785914    US6067502    US5651426    US20010035109A1    WO2001083546A1    US5959266    US5338143" /> -->
+<!-- 		<parameter name="searchPage_bulkSearch_expNum" value="500" /> -->
+<!-- 		<parameter name="searchPage_ipc_keyword" value="A01" /> -->
+<!-- 		<parameter name="firefoxProfile" value="1" /> -->
+<!-- 		<parameter name="download_path" value="C:/selenium_download" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="searchElementsCheck" /> -->
+<!-- 					<include name="bulkSearch" /> -->
+<!-- 					<include name="ipcSearch" /> -->
+<!-- 					<include name="fieldSearch" /> -->
+<!-- 					<include name="pDFDownloadOnSearchResultPage_tableView" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+</suite>

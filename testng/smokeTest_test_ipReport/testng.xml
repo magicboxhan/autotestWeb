@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite_Zhihuiya" parallel="false">
+	<!-- basic -->
+	<parameter name="browserType" value="ff" />
+	<parameter name="chromeDriverPath" value="E:\\autotest\\drivers\\chromedriver.exe" />
+	<parameter name="ieDriverPath" value="E:\\autotest\\drivers\\IEDriverServer.exe" />
+	<parameter name="timeout_ImplicitlyWait" value="5" />
+	<parameter name="timeout_PageLoadTimeout" value="600" />
+	<parameter name="timeout_ScriptLoadTimeout" value="300" />
+	<parameter name="firefoxProfile" value="1" />
+	<!-- account -->
+	<parameter name="loginPage_url" value="http://test-ipreport.patsnap.com/" />
+	<parameter name="loginPage_uid" value="hanqing@zhihuiya.com" />
+	<parameter name="loginPage_pwd" value="123456" />
+	
+<!-- 	<test name="zhihuiya_ipReport_1" preserve-order="true"> -->
+<!-- 		<parameter name="assignee" value="APPLE" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="ipReport" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+<!-- 	<test name="zhihuiya_ipReport_2" preserve-order="true"> -->
+<!-- 		<parameter name="assignee" value="MICROSOFT CORP" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="ipReport" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+<!-- 	<test name="zhihuiya_ipReport_3" preserve-order="true"> -->
+<!-- 		<parameter name="assignee" value="SONY ELECTRONICS" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="ipReport" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+<!-- 	<test name="zhihuiya_ipReport_4" preserve-order="true"> -->
+<!-- 		<parameter name="assignee" value="SONY CORP" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="ipReport" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+<!-- 	<test name="zhihuiya_ipReport_5" preserve-order="true"> -->
+<!-- 		<parameter name="assignee" value="TOSHIBA KK" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="ipReport" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+<!-- 	<test name="zhihuiya_ipReport_6" preserve-order="true"> -->
+<!-- 		<parameter name="assignee" value="APPLE COMPUTER" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="ipReport" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+<!-- 	<test name="zhihuiya_ipReport_7" preserve-order="true"> -->
+<!-- 		<parameter name="assignee" value="SIEMENS AG" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="ipReport" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+<!-- 	<test name="zhihuiya_ipReport_8" preserve-order="true"> -->
+<!-- 		<parameter name="assignee" value="SAMSUNG" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="ipReport" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+<!-- 	<test name="zhihuiya_ipReport_9" preserve-order="true"> -->
+<!-- 		<parameter name="assignee" value="DELL" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="ipReport" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+<!-- 	<test name="zhihuiya_ipReport_10" preserve-order="true"> -->
+<!-- 		<parameter name="assignee" value="DELL INC" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="ipReport" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+<!-- 	<test name="zhihuiya_ipReport_11" preserve-order="true"> -->
+<!-- 		<parameter name="assignee" value="ACER INC" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="ipReport" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+<!-- 	<test name="zhihuiya_ipReport_12" preserve-order="true"> -->
+<!-- 		<parameter name="assignee" value="HTC" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="ipReport" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+<!-- 	<test name="zhihuiya_ipReport_13" preserve-order="true"> -->
+<!-- 		<parameter name="assignee" value="NAT STEEL CAR LTD" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="ipReport" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+<!-- 	<test name="zhihuiya_ipReport_14" preserve-order="true"> -->
+<!-- 		<parameter name="assignee" value="MERK FRITZ" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="ipReport" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+<!-- 	<test name="zhihuiya_ipReport_15" preserve-order="true"> -->
+<!-- 		<parameter name="assignee" value="NIPPON ELECTRIC CO TLD" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="ipReport" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+<!-- 	<test name="zhihuiya_ipReport_16" preserve-order="true"> -->
+<!-- 		<parameter name="assignee" value="TOYOTA MOTOR CO LTD" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="ipReport" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+<!-- 	<test name="zhihuiya_ipReport_17" preserve-order="true"> -->
+<!-- 		<parameter name="assignee" value="TOYOTA IND CORP" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="ipReport" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+<!-- 	<test name="zhihuiya_ipReport_18" preserve-order="true"> -->
+<!-- 		<parameter name="assignee" value="TOYOTA KK" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="ipReport" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+<!-- 	<test name="zhihuiya_ipReport_19" preserve-order="true"> -->
+<!-- 		<parameter name="assignee" value="MATSUSHITA ELECTRIC IND CO TLD" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="ipReport" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+<!-- 	<test name="zhihuiya_ipReport_20" preserve-order="true"> -->
+<!-- 		<parameter name="assignee" value="SHARP KK" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="ipReport" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+<!-- 	<test name="zhihuiya_ipReport_21" preserve-order="true"> -->
+<!-- 		<parameter name="assignee" value="MOTOROLA INC" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="ipReport" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test>	 -->
+<!-- 	<test name="zhihuiya_ipReport_22" preserve-order="true"> -->
+<!-- 		<parameter name="assignee" value="IBM JAPAN" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="ipReport" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test>	 -->
+<!-- 	<test name="zhihuiya_ipReport_23" preserve-order="true"> -->
+<!-- 		<parameter name="assignee" value="IBM" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="ipReport" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test>	 -->
+<!-- 	<test name="zhihuiya_ipReport_24" preserve-order="true"> -->
+<!-- 		<parameter name="assignee" value="GEORGE ROGERS" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="ipReport" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test>	 -->
+<!-- 	<test name="zhihuiya_ipReport_25" preserve-order="true"> -->
+<!-- 		<parameter name="assignee" value="BRITISH THOMSON HOUSTON CO LTD" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="ipReport" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test>	 -->
+<!-- 	<test name="zhihuiya_ipReport_26" preserve-order="true"> -->
+<!-- 		<parameter name="assignee" value="SHOWA DENKO KK" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="ipReport" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test>	 -->
+<!-- 	<test name="zhihuiya_ipReport_27" preserve-order="true"> -->
+<!-- 		<parameter name="assignee" value="BBC BROWN BOVERI CIE" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="ipReport" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test>	 -->
+<!-- 	<test name="zhihuiya_ipReport_28" preserve-order="true"> -->
+<!-- 		<parameter name="assignee" value="BAIER MICHAEL" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="ipReport" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test>	 -->
+	<test name="zhihuiya_ipReport_29" preserve-order="true">
+		<parameter name="assignee" value="北京理工大学" />
+		<classes>
+			<class name="Zhihuiya_smokeTest">
+				<methods>
+					<include name="ipReport" />
+				</methods>
+			</class>
+		</classes>
+	</test>	
+<!-- 	<test name="zhihuiya_ipReport_30" preserve-order="true"> -->
+<!-- 		<parameter name="assignee" value="北京仿真中心" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="ipReport" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test>	 -->
+	<test name="zhihuiya_ipReport_31" preserve-order="true">
+		<parameter name="assignee" value="江苏大学" />
+		<classes>
+			<class name="Zhihuiya_smokeTest">
+				<methods>
+					<include name="ipReport" />
+				</methods>
+			</class>
+		</classes>
+	</test>	
+	<test name="zhihuiya_ipReport_32" preserve-order="true">
+		<parameter name="assignee" value="北京大学" />
+		<classes>
+			<class name="Zhihuiya_smokeTest">
+				<methods>
+					<include name="ipReport" />
+				</methods>
+			</class>
+		</classes>
+	</test>	
+	<test name="zhihuiya_ipReport_33" preserve-order="true">
+		<parameter name="assignee" value="联想（北京）有限公司" />
+		<classes>
+			<class name="Zhihuiya_smokeTest">
+				<methods>
+					<include name="ipReport" />
+				</methods>
+			</class>
+		</classes>
+	</test>	
+<!-- 	<test name="zhihuiya_ipReport_34" preserve-order="true"> -->
+<!-- 		<parameter name="assignee" value="浙江永达电力实业股份有限公司" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Zhihuiya_smokeTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="ipReport" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test>	 -->
+	<test name="zhihuiya_ipReport_35" preserve-order="true">
+		<parameter name="assignee" value="北京四维图新科技股份有限公司" />
+		<classes>
+			<class name="Zhihuiya_smokeTest">
+				<methods>
+					<include name="ipReport" />
+				</methods>
+			</class>
+		</classes>
+	</test>	
+
+
+</suite>

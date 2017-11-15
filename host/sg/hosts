@@ -1,0 +1,13 @@
+127.0.0.1       localhost by.uservoice.com widget.uservoice.com 
+
+### sg ###
+
+#54.88.189.109		www.patsnap.com www.zhihuiya.com cn.patsnap.com tw.patsnap.com sme.patsnap.com sme.zhihuiya.com analytics.patsnap.com a.patsnap.com static.patsnap.com release-analytics.patsnap.com
+#54.88.189.109 		release-analytics.patsnap.com release-static.patsnap.com release.patsnap.com release-cn.patsnap.com release-tw.patsnap.com release-sme.patsnap.com release-sme.zhihuiya.com
+
+
+#54.192.182.141		cdn-analytics.patsnap.com www.patsnap.com www.zhihuiya.com cn.patsnap.com tw.patsnap.com sme.patsnap.com sme.zhihuiya.com analytics.patsnap.com a.patsnap.com static.patsnap.com release-analytics.patsnap.com
+#54.192.182.141 		cdn-sme.zhihuiya.com release-analytics.patsnap.com release-static.patsnap.com release.patsnap.com release-cn.patsnap.com release-tw.patsnap.com release-sme.patsnap.com release-sme.zhihuiya.com
+
+#54.182.2.133    analytics.patsnap.com static.patsnap.com report.patsnap.com www.patsnap.com cn.patsnap.com
+#54.182.2.133    tw.patsnap.com sme.patsnap.com a.patsnap.com

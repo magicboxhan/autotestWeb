@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite_Zhihuiya" parallel="false">
+	<!-- basic -->
+	<parameter name="browserType" value="ff" />
+	<parameter name="chromeDriverPath" value="E:\\autotest\\drivers\\chromedriver.exe" />
+	<parameter name="ieDriverPath" value="E:\\autotest\\drivers\\IEDriverServer.exe" />
+	<parameter name="timeout_ImplicitlyWait" value="5" />
+	<parameter name="timeout_PageLoadTimeout" value="600" />
+	<parameter name="timeout_ScriptLoadTimeout" value="300" />
+	<parameter name="firefoxProfile" value="1" />
+	<!-- account -->
+	<parameter name="loginPage_url" value="http://www.patsnap.com/" />
+	<parameter name="loginPage_uid" value="hanqing@zhihuiya.com" />
+	<parameter name="loginPage_pwd" value="123456" />
+
+	<test name="baobaobaoming_hanqing" preserve-order="true">
+		<parameter name="name" value="韩青" />
+		<parameter name="gender" value="0" />
+		<parameter name="email" value="hanqing@zhihuiya.com" />
+		<parameter name="phone" value="13584829701" />
+		<parameter name="company" value="智慧芽" />
+		<parameter name="job" value="测试开发工程师" />
+		<parameter name="city" value="苏州" />
+		<parameter name="years" value="2" />
+		<classes>
+			<class name="TaobaoBaoMing">
+				<methods>
+					<include name="Baoming" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="baobaobaoming_xuchaobo" preserve-order="true">
+		<parameter name="name" value="徐朝波" />
+		<parameter name="gender" value="0" />
+		<parameter name="email" value="xuchaobo@patsnap.com" />
+		<parameter name="phone" value="15995417759" />
+		<parameter name="company" value="智慧芽" />
+		<parameter name="job" value="测试开发工程师" />
+		<parameter name="city" value="苏州" />
+		<parameter name="years" value="2" />
+		<classes>
+			<class name="TaobaoBaoMing">
+				<methods>
+					<include name="Baoming" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="baobaobaoming_zhangjiadi" preserve-order="true">
+		<parameter name="name" value="张佳娣" />
+		<parameter name="gender" value="1" />
+		<parameter name="email" value="zhangjiadi@patsnap.com" />
+		<parameter name="phone" value="18896940801" />
+		<parameter name="company" value="智慧芽" />
+		<parameter name="job" value="测试开发工程师" />
+		<parameter name="city" value="苏州" />
+		<parameter name="years" value="2" />
+		<classes>
+			<class name="TaobaoBaoMing">
+				<methods>
+					<include name="Baoming" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="baobaobaoming_zhangshu" preserve-order="true">
+		<parameter name="name" value="张舒" />
+		<parameter name="gender" value="0" />
+		<parameter name="email" value="zhangshu_0502@126.com" />
+		<parameter name="phone" value="15206214292" />
+		<parameter name="company" value="智慧芽" />
+		<parameter name="job" value="测试开发工程师" />
+		<parameter name="city" value="苏州" />
+		<parameter name="years" value="2" />
+		<classes>
+			<class name="TaobaoBaoMing">
+				<methods>
+					<include name="Baoming" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="baobaobaoming_haihuan" preserve-order="true">
+		<parameter name="name" value="陈海环" />
+		<parameter name="gender" value="0" />
+		<parameter name="email" value="chenhaihuan@patsnap.com" />
+		<parameter name="phone" value="13913180351" />
+		<parameter name="company" value="智慧芽" />
+		<parameter name="job" value="测试开发工程师" />
+		<parameter name="city" value="苏州" />
+		<parameter name="years" value="2" />
+		<classes>
+			<class name="TaobaoBaoMing">
+				<methods>
+					<include name="Baoming" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

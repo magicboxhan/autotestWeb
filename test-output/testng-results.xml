@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite_zhihuiya_export" duration-ms="511075" started-at="2014-08-15T03:48:30Z" finished-at="2014-08-15T03:57:01Z">
+    <groups>
+    </groups>
+    <test name="zhihuiya_export_pat_358_1" duration-ms="511075" started-at="2014-08-15T03:48:30Z" finished-at="2014-08-15T03:57:01Z">
+      <class name="Zhihuiya_regressionTest">
+        <test-method status="PASS" signature="setup_suite(int)[pri:0, instance:Zhihuiya_regressionTest@7b4c50bc]" name="setup_suite" is-config="true" duration-ms="15" started-at="2014-08-15T11:48:30Z" finished-at="2014-08-15T11:48:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[300]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup_suite -->
+        <test-method status="PASS" signature="setup_test(java.lang.String, java.lang.String, java.lang.String, int, int, int, int)[pri:0, instance:Zhihuiya_regressionTest@7b4c50bc]" name="setup_test" is-config="true" duration-ms="8728" started-at="2014-08-15T11:48:30Z" finished-at="2014-08-15T11:48:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ff]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[E:\\autotest\\drivers\\chromedriver.exe]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[E:\\autotest\\drivers\\IEDriverServer.exe]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[60]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[60]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup_test -->
+        <test-method status="PASS" signature="export_pat_358(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, java.lang.String)[pri:0, instance:Zhihuiya_regressionTest@7b4c50bc]" name="export_pat_358" duration-ms="501957" started-at="2014-08-15T11:48:39Z" finished-at="2014-08-15T11:57:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://test.patsnap.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hanqing@zhihuiya.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[ALL_DB]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[ALL]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[trip1]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[C:/selenium_download]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[60]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- export_pat_358 -->
+        <test-method status="PASS" signature="teardown_test()[pri:0, instance:Zhihuiya_regressionTest@7b4c50bc]" name="teardown_test" is-config="true" duration-ms="359" started-at="2014-08-15T11:57:01Z" finished-at="2014-08-15T11:57:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown_test -->
+        <test-method status="PASS" signature="teardown_suite()[pri:0, instance:Zhihuiya_regressionTest@7b4c50bc]" name="teardown_suite" is-config="true" duration-ms="0" started-at="2014-08-15T11:57:01Z" finished-at="2014-08-15T11:57:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown_suite -->
+      </class> <!-- Zhihuiya_regressionTest -->
+    </test> <!-- zhihuiya_export_pat_358_1 -->
+  </suite> <!-- Suite_zhihuiya_export -->
+</testng-results>

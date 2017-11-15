@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite_Zhihuiya" parallel="false">
+	<!-- basic -->
+	<parameter name="browserType" value="ff" />
+	<parameter name="chromeDriverPath" value="E:\\autotest\\drivers\\chromedriver.exe" />
+	<parameter name="ieDriverPath" value="E:\\autotest\\drivers\\IEDriverServer.exe" />
+	<parameter name="timeout_ImplicitlyWait" value="5" />
+	<parameter name="timeout_PageLoadTimeout" value="600" />
+	<parameter name="timeout_ScriptLoadTimeout" value="300" />
+	<parameter name="firefoxProfile" value="1" />
+	<!-- account -->
+	<parameter name="loginPage_url" value="http://analytics.patsnap.com/" />
+	<parameter name="loginPage_uid" value="hanqing@zhihuiya.com" />
+	<parameter name="loginPage_pwd" value="123456" />
+	
+	<test name="zhihuiya_solrData_sh" preserve-order="true">
+		<parameter name="searchPage_database" value="ALL_DB" />
+		<parameter name="searchPage_field" value="PN" />
+		<parameter name="solr_data" value="AP: 10421 2014-10-31
+AR: 147677 2014-12-30
+AT: 1213511 2015-02-15
+AU: 1698234 2015-01-29
+BA: 216 2001-09-14
+BE: 586343 2014-09-02
+BG: 54335 2014-06-30
+BR: 585760 2015-02-03
+BY: 25 2013-12-30
+CA: 2919448 2015-02-21
+CH: 724103 2015-01-30
+CL: 12593 2014-11-21
+CN: 13161862 2015-02-11
+CO: 21248 2014-10-21
+CR: 6174 2014-09-29
+CS: 174258 2003-11-12
+CU: 6204 2014-10-30
+CY: 4561 2015-01-14
+CZ: 108550 2015-02-04
+DD: 244138 2003-08-07
+DE: 8930947 2015-02-26
+DK: 542535 2015-02-09
+DO: 3106 2015-01-15
+DZ: 1455 2005-10-08
+EA: 50378 2015-01-30
+EC: 11220 2012-02-29
+EE: 9674 2015-01-15
+EG: 13152 2014-10-30
+EP: 5149184 2015-02-25
+ES: 1245691 2015-02-12
+FI: 462796 2015-01-30
+FR: 3106003 2015-02-20
+GB: 3528891 2015-02-25
+GC: 414 2010-09-30
+GE: 5006 2013-05-27
+GR: 128964 2015-01-28
+GT: 6254 2014-08-27
+HK: 98852 2015-01-30
+HN: 925 2014-12-08
+HR: 33993 2015-01-30
+HU: 264111 2015-01-28
+ID: 14633 2002-01-03
+IE: 124547 2015-01-28
+IL: 271833 2015-01-29
+IN: 115057 2015-02-06
+IS: 10546 2015-01-15
+IT: 1084205 2015-02-17
+JP: 23768526 2015-02-23
+KE: 1352 1989-09-01
+KR: 4910492 2015-02-26
+KZ: 43 2011-10-17
+LT: 7071 2015-01-26
+LU: 63250 2015-01-26
+LV: 8585 2015-01-20
+MZ: 0 0
+MC: 2768 2014-02-19
+MD: 7500 2015-01-31
+MN: 233 1989-06-15
+MT: 545 1992-05-08
+MW: 732 1994-10-12
+MX: 249419 2014-10-08
+MY: 50107 2013-12-31
+NI: 197 2009-03-24
+NL: 637819 2014-11-10
+NO: 560664 2015-02-23
+NZ: 117860 2014-10-31
+OA: 13431 2007-04-13
+PA: 2384 2010-07-27
+PE: 19012 2014-12-31
+PH: 22819 2003-03-18
+PL: 367013 2015-02-02
+PT: 133768 2015-01-30
+RO: 92217 2015-01-30
+RS: 7432 2014-12-31
+RU: 849852 2014-09-27
+SE: 1033837 2015-02-10
+SG: 206695 2014-04-28
+SI: 29842 2015-01-30
+SK: 36986 2015-02-03
+SM: 2154 2015-01-15
+SU: 1174338 2012-09-27
+SV: 1590 2014-09-19
+TJ: 536 2012-03-28
+TR: 63833 2013-01-21
+TW: 1753924 2015-02-21
+UA: 122230 2014-05-12
+US: 13661740 2015-02-26
+UY: 10564 2014-10-31
+VN: 174 2013-07-25
+WO: 3272348 2015-02-19
+YU: 94436 2006-12-15
+ZA: 239905 2013-12-23
+ZM: 2731 1994-05-25
+ZW: 2639 1995-01-25
+" />
+		<classes>
+			<class name="Zhihuiya_smokeTest">
+				<methods>
+					<include name="solrData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

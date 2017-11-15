@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite_Zhihuiya" parallel="false">
+	<!-- basic -->
+	<parameter name="browserType" value="ff" />
+	<parameter name="chromeDriverPath" value="E:\\autotest\\drivers\\chromedriver.exe" />
+	<parameter name="ieDriverPath" value="E:\\autotest\\drivers\\IEDriverServer.exe" />
+	<parameter name="timeout_ImplicitlyWait" value="5" />
+	<parameter name="timeout_PageLoadTimeout" value="600" />
+	<parameter name="timeout_ScriptLoadTimeout" value="300" />
+	<parameter name="firefoxProfile" value="1" />
+	<!-- account -->
+	<parameter name="loginPage_url" value="http://analytics.patsnap.com/" />
+	<parameter name="loginPage_uid" value="hanqing@zhihuiya.com" />
+	<parameter name="loginPage_pwd" value="123456" />
+	
+	<test name="zhihuiya_solrData_sg" preserve-order="true">
+		<parameter name="searchPage_database" value="ALL_DB" />
+		<parameter name="searchPage_field" value="PN" />
+		<parameter name="solr_data" value="AP: 10043
+AR: 140894
+AT: 1212842
+AU: 1683831
+BA: 216
+BE: 586663
+BG: 54352
+BR: 576978
+BY: 19
+CA: 2890481
+CH: 719953
+CL: 7474
+CN: 12394526
+CO: 21133
+CR: 6112
+CS: 174324
+CU: 5927
+CY: 4179
+CZ: 107811
+DD: 243836
+DE: 8910796
+DK: 540065
+DO: 3004
+DZ: 1455
+EA: 47957
+EC: 11167
+EE: 9607
+EG: 13051
+EP: 5054703
+ES: 1235192
+FI: 462112
+FR: 3097172
+GB: 3515485
+GC: 415
+GE: 5007
+GR: 101201
+GT: 6248
+HK: 97231
+HN: 886
+HR: 33543
+HU: 263881
+ID: 14639
+IE: 124516
+IL: 269312
+IN: 54365
+IS: 10525
+IT: 1080759
+JP: 24592141
+KE: 1352
+KR: 4854580
+KZ: 41
+LT: 6971
+LU: 63205
+LV: 8511
+MZ: 0
+MC: 2770
+MD: 7203
+MN: 233
+MT: 545
+MW: 732
+MX: 244667
+MY: 50118
+NI: 197
+NL: 635614
+NO: 602982
+NZ: 116984
+OA: 13435
+PA: 2386
+PE: 16728
+PH: 22829
+PL: 364620
+PT: 131157
+RO: 83464
+RS: 7186
+RU: 849839
+SE: 1178941
+SG: 211920
+SI: 29007
+SK: 36693
+SM: 2051
+SU: 1173341
+SV: 1588
+TJ: 535
+TR: 63834
+TW: 1708502
+UA: 102723
+US: 13415591
+UY: 10317
+VN: 172
+WO: 3165776
+YU: 94471
+ZA: 239983
+ZM: 2732
+ZW: 2639
+" />
+		<classes>
+			<class name="Zhihuiya_smokeTest">
+				<methods>
+					<include name="solrData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

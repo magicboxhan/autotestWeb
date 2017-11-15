@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite_Zhihuiya" parallel="false">
+	<!-- basic -->
+	<parameter name="browserType" value="ff" />
+	<parameter name="chromeDriverPath" value="E:\\autotest\\drivers\\chromedriver.exe" />
+	<parameter name="ieDriverPath" value="E:\\autotest\\drivers\\IEDriverServer.exe" />
+	<parameter name="timeout_ImplicitlyWait" value="5" />
+	<parameter name="timeout_PageLoadTimeout" value="600" />
+	<parameter name="timeout_ScriptLoadTimeout" value="300" />
+	<parameter name="firefoxProfile" value="1" />
+	<!-- account -->
+	<parameter name="loginPage_url" value="http://analytics.patsnap.com/" />
+	<parameter name="loginPage_uid" value="hanqing@zhihuiya.com" />
+	<parameter name="loginPage_pwd" value="123456" />
+	<parameter name="language" value="0" />
+
+	<test name="patentView_normal" preserve-order="true">
+		<classes>
+			<class name="Zhihuiya_regressionTest_PVP">
+				<methods>
+					<include name="patentView_UI" />
+					<include name="overView_image" />
+					<include name="patentView_fixFields"/>
+					<include name="overtView_claims" />
+					<include name="overView_description" />
+					<include name="overView_cites" />
+					<include name="overView_cited" />
+					<include name="dualView_UI" />
+					<include name="citationAnalysis_UI" />
+					<include name="patentFamily_distributionMap" />
+					<include name="patentFamily_PatentList" />
+					<include name="patentFamily_PriorityData" />
+					<include name="patentFamily_AssigneeName" />
+					<include name="patentFamily_InventorName" />
+					<include name="patentFamily_IPC" />
+					<include name="patentFamily_abstract" />
+					<include name="patentFamily_LegalStatus" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="patentView_otherLanguage" preserve-order="true">
+		<parameter name="query" value="CN102760467A" />
+		<classes>
+			<class name="Zhihuiya_regressionTest_PVP">
+				<methods>
+					<include name="patentView_UI_otherLanguage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!--<test name="patentView_pat_3152" preserve-order="true">-->
+		<!--<parameter name="query" value="DE78C" />-->
+		<!--<classes>-->
+			<!--<class name="Zhihuiya_regressionTest_PVP">-->
+				<!--<methods>-->
+					<!--<include name="patentView_imageEmpty" />-->
+				<!--</methods>-->
+			<!--</class>-->
+		<!--</classes>-->
+	<!--</test>-->
+
+	<!--<test name="patentView_testHQ" preserve-order="true">-->
+		<!--<classes>-->
+			<!--<class name="Zhihuiya_regressionTest_PVP">-->
+				<!--<methods>-->
+					<!--<include name="testHQ" />-->
+				<!--</methods>-->
+			<!--</class>-->
+		<!--</classes>-->
+	<!--</test>-->
+
+	<!--<test name="patentView_testHQ" preserve-order="true">-->
+		<!--<classes>-->
+			<!--<class name="Zhihuiya_regressionTest_PVP">-->
+				<!--<methods>-->
+					<!--<include name="testHQ" />-->
+				<!--</methods>-->
+			<!--</class>-->
+		<!--</classes>-->
+	<!--</test>-->
+</suite>

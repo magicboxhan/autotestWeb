@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite_Zhihuiya" parallel="false">
+	<!-- basic -->
+	<parameter name="browserType" value="ff" />
+	<parameter name="chromeDriverPath" value="E:\\autotest\\drivers\\chromedriver.exe" />
+	<parameter name="ieDriverPath" value="E:\\autotest\\drivers\\IEDriverServer.exe" />
+	<parameter name="timeout_ImplicitlyWait" value="5" />
+	<parameter name="timeout_PageLoadTimeout" value="600" />
+	<parameter name="timeout_ScriptLoadTimeout" value="300" />
+	<parameter name="firefoxProfile" value="1" />
+	<!-- account -->
+	<parameter name="loginPage_url" value="http://test-ipreport.patsnap.com/" />
+	<parameter name="loginPage_uid" value="hanqing@zhihuiya.com" />
+	<parameter name="loginPage_pwd" value="123456" />
+	
+	<test name="ipreportReqTest" preserve-order="true">
+		<parameter name="filePath" value="D://ipReportReqTest" />
+		<parameter name="outputPath" value="D://ipReportReqTest//pics" />
+		<classes>
+			<class name="IpReportRequirementTest">
+				<methods>
+					<include name="test" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+</suite>
